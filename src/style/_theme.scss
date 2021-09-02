@@ -1,0 +1,45 @@
+/**
+ * Define all of the default preset color variables.
+ * And export it.
+ * !!To make the export working, we need to declare the '*.scss' module in d.ts file.
+ */
+$primary: #5A3CFF;
+$primary-200: #8683FF;
+$primary-300: #F0EFFF;
+
+$secondary: #1BDCD7;
+$secondary-200: #5FE6E3;
+$secondary-300: #E8FBFB;
+
+$info: #55A6FF;
+$info-200: #88C0FF;
+$info-300: #EEF6FF;
+
+$success: #29D16C;
+$success-200: #69DE98;
+$success-300: #EAFAF0;
+
+$danger: #FF5555;
+$danger-200: #FF8888;
+$danger-300: #FFEEEE;
+
+$warning: #FF9E3B;
+$warning-200: #FFBB76;
+$warning-300: #FFF5EB;
+
+// Not standard yet
+$dark: #222428;
+$medium: #92949c;
+$light: #f4f5f8;
+
+:export {
+  primary: $primary;
+  secondary: $secondary;
+  info: $info;
+  success: $success;
+  warning: $warning;
+  danger: $danger;
+  dark: $dark;
+  medium: $medium;
+  light: $light;
+}

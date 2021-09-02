@@ -1,0 +1,99 @@
+@import "../../../style/main";
+@import "variables";
+
+.__T_RadioButton_container {
+  @include transition270;
+  display: block;
+  position: relative;
+  padding-left: calc(#{$t-radio-button-size} + #{$t-radio-button-padding-left});
+  cursor: pointer;
+  @include fontSize14px;
+  @include fontWeight400;
+  color: $jungletron-gray-100;
+  line-height: $t-radio-button-line-height;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  /* Hide the browser's default radio button */
+  & > input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  &[disabled] {
+    color: $jungletron-gray-400;
+    pointer-events: none;
+  }
+}
+
+/* Create a custom radio button */
+.__T_RadioButton_radio {
+  position: absolute;
+  //top: calc((#{$t-radio-button-line-height} - #{$t-radio-button-size})/2 - 1px); // -1px to enhance the visual effect, this line of code can align radio to flex-start
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+
+  &:after {
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    content: "";
+    position: absolute;
+    display: none;
+
+    /* Style the indicator (dot/circle) */
+    top: 5px;
+    left: 5px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: $jungletron-white;
+  }
+
+  &[disabled] {
+    &:after {
+      left: 4px;
+      top: 4px;
+      background: $jungletron-gray-400;
+    }
+  }
+}
+
+/* On mouse-over, add a grey background color */
+.__T_RadioButton_container:hover input ~ .__T_RadioButton_radio {
+  background-color: $jungletron-gray-600;
+}
+
+/* When the radio button is checked, add a blue background */
+.__T_RadioButton_container input:checked ~ .__T_RadioButton_radio {
+  background-color: $jungletron-preset-primary-color;
+
+  &[disabled] {
+    border: 1px solid $jungletron-gray-400;
+    background-color: $jungletron-gray-600;
+  }
+}
+
+.__T_RadioButton_container input:not(:checked) ~ .__T_RadioButton_radio {
+  border: 1px solid $jungletron-gray-100;
+
+  &[disabled] {
+    border-color: $jungletron-gray-400;
+    background-color: $jungletron-gray-600;
+  }
+}
+
+/* Show the indicator (dot/circle) when checked */
+.__T_RadioButton_container input:checked ~ .__T_RadioButton_radio:after {
+  display: block;
+}
+

@@ -1,0 +1,95 @@
+@charset "utf-8";
+@import "variable";
+
+/**
+ * Define all mixins for scss styles using the jungletron-preset-colors.
+ */
+
+@mixin border_color {
+  [ jungletron-theme="jungletron-theme" ] & {
+    border-color: $jungletron-preset-primary-color;
+  }
+}
+
+@mixin background_color {
+  [ jungletron-theme="jungletron-theme" ] & {
+    background-color: $jungletron-preset-primary-color;
+  }
+}
+
+@mixin color {
+  [ jungletron-theme="jungletron-theme" ] & {
+    color: $jungletron-preset-primary-color;
+  }
+}
+
+@mixin transition270 {
+  transition: all 270ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin border_radius_4px {
+  border-radius: 4px;
+}
+
+@mixin fontSize10px {
+  font-size: 10px;
+}
+
+@mixin fontSize12px {
+  font-size: 12px;
+}
+
+@mixin fontSize14px {
+  font-size: 14px;
+}
+
+@mixin fontSize16px {
+  font-size: 16px;
+}
+
+@mixin fontSize18px {
+  font-size: 18px;
+}
+
+@mixin fontSize20px {
+  font-size: 20px;
+}
+
+@mixin fontWeightNormal {
+  font-weight: normal;
+}
+
+@mixin fontWeight400 {
+  font-weight: 400;
+}
+
+@mixin fontWeight500 {
+  font-weight: 500;
+}
+
+@mixin fontWeight600 {
+  font-weight: 600;
+}
+
+@mixin fontWeight700 {
+  font-weight: 700;
+}
+
+@mixin lineHeight12px {
+  line-height: 12px;
+}
+
+@mixin lineHeight16px {
+  line-height: 16px;
+}
+
+@mixin lineHeight20px {
+  line-height: 20px;
+}
+
+@mixin lineHeight24px {
+  line-height: 24px;
+}
+
+
+

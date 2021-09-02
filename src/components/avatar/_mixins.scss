@@ -1,0 +1,16 @@
+@use "sass:map";
+
+@import "variables";
+
+@mixin avatar_size($size) {
+  height: map.get($t_avatar_size, $size);
+  min-height: map.get($t_avatar_size, $size);
+  width: map.get($t_avatar_size, $size);
+  min-width: map.get($t_avatar_size, $size);
+}
+
+@mixin avatar_text_spec($size) {
+  font-size: map.get($t_avatar_text_font_size, $size);
+  line-height: map.get($t_avatar_text_line_height, $size);
+  font-weight: map.get($t_avatar_text_font_weight, $size);
+}

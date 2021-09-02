@@ -1,0 +1,70 @@
+@import "variables";
+@import "mixins";
+@import "../../style/main";
+
+%__T_Avatar_Container {
+  position: relative;
+  overflow: hidden;
+}
+
+@each $size in $t_avatar_sizes {
+  .__T_Avatar_#{$size} {
+    @include avatar_size($size);
+  }
+}
+
+.__T_Avatar_Container_Image {
+  &:hover {
+    cursor: pointer;
+
+    &:after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #00000010;
+      border-radius: 50%;
+    }
+  }
+}
+
+.__T_Avatar_Container_Circle {
+  @extend %__T_Avatar_Container;
+  border-radius: 50%;
+}
+
+.__T_Avatar_Container_Tile {
+  @extend %__T_Avatar_Container;
+  border-radius: 0;
+}
+
+.__T_Avatar_Image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.__T_Avatar_Text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $jungletron-white;
+
+  background: $jungletron-gray-200;
+  @include transition270;
+
+  @each $size in $t_avatar_sizes {
+    .__T_Avatar_#{$size} & {
+      @include avatar_text_spec($size);
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    background: #{$jungletron-gray-200}60;
+  }
+}

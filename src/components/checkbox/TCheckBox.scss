@@ -1,0 +1,124 @@
+@import "../../style/main";
+@import "variables";
+
+/* The container */
+.__T_CheckBox_container {
+  @include transition270;
+  display: block;
+  position: relative;
+  padding-left: calc(#{$t-checkbox-size} + #{$t-checkbox-padding-left});
+  cursor: pointer;
+  @include fontSize14px;
+  @include fontWeight400;
+  color: $jungletron-gray-100;
+  line-height: $t-checkbox-line-height;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  /* Hide the browser's default checkbox */
+  & > input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  &[disabled] {
+    color: $jungletron-gray-400;
+    pointer-events: none;
+  }
+
+}
+
+/* Create a custom checkbox */
+.__T_CheckBox_checkmark {
+  position: absolute;
+  top: calc((#{$t-checkbox-line-height} - #{$t-checkbox-size})/2 - 1px); // -1px to enhance the visual effect
+  left: 0;
+  height: 16px;
+  width: 16px;
+  border-radius: 1px;
+
+  &.__T_CheckBox_default {
+    &:after {
+      /* Create the checkmark/indicator (hidden when not checked) */
+      content: "";
+      position: absolute;
+      display: none;
+
+      /* Style the checkmark/indicator */
+      left: 5px;
+      top: 2px;
+      width: 6px;
+      height: 9px;
+      border: solid $jungletron-white;
+      border-width: 0 2px 2px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+
+    &[disabled] {
+      &:after {
+        left: 4px;
+        border-color: $jungletron-gray-400;
+      }
+    }
+  }
+
+  &.__T_CheckBox_indeterminate {
+    &:after {
+      /* Create the checkmark/indicator (hidden when not checked) */
+      content: "";
+      position: absolute;
+      display: none;
+
+      /* Style the checkmark/indicator */
+      left: 4px;
+      top: 7px;
+      width: 8px;
+      height: 2px;
+      background: $jungletron-white;
+    }
+
+    &[disabled] {
+      &:after {
+        left: 3px;
+        top: 6px;
+        background: $jungletron-gray-400;
+      }
+    }
+  }
+}
+
+/* On mouse-over, add a grey background color */
+.__T_CheckBox_container:hover input ~ .__T_CheckBox_checkmark {
+  background-color: $jungletron-gray-600;
+}
+
+/* When the checkbox is checked, add a blue background */
+.__T_CheckBox_container input:checked ~ .__T_CheckBox_checkmark {
+  background-color: $jungletron-preset-primary-color;
+
+  &[disabled] {
+    border: 1px solid $jungletron-gray-400;
+    background-color: $jungletron-gray-600;
+  }
+}
+
+.__T_CheckBox_container input:not(:checked) ~ .__T_CheckBox_checkmark {
+  border: 1px solid $jungletron-gray-100;
+
+  &[disabled] {
+    border-color: $jungletron-gray-400;
+    background-color: $jungletron-gray-600;
+  }
+}
+
+/* Show the checkmark when checked */
+.__T_CheckBox_container input:checked ~ .__T_CheckBox_checkmark:after {
+  display: block;
+}

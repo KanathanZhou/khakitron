@@ -1,0 +1,69 @@
+@import "../../style/main";
+
+.__T_Slider {
+  display: block;
+  user-select: none;
+
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+
+  visibility: inherit;
+
+  height: 100%;
+}
+
+.__T_Slider_container {
+  position: relative;
+  box-sizing: content-box;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  transition-duration: 0ms;
+}
+
+.__T_Slider_pager {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 40px;
+
+  display: flex;
+  justify-content: center;
+
+  z-index: 10;
+
+  .__T_Slider_pager_dot {
+    width: 8px;
+    height: 8px;
+    background: #FFFFFF10;
+    margin: 0 3px;
+    border-radius: 50%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .__T_Slider_pager_activated_dot {
+    width: 34px;
+    height: 8px;
+    background: #FFFFFF50;
+    border-radius: 4px;
+    //opacity: 0.5; // I just added 50 to background
+    margin: 0 3px;
+  }
+}
+
+.__T_Slider_static_slot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 8;
+
+  display: block;
+}

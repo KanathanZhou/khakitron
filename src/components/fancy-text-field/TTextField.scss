@@ -1,0 +1,48 @@
+@import "variables";
+@import "../../style/_main.scss";
+
+.__T_fancy_textfield {
+  //width: 280px;
+  padding: 22px 36px 10px 12px;
+  outline: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  font-size: 14px;
+  height: 48px !important;
+  box-sizing: border-box;
+  text-align: left;
+  z-index: 19;
+  background: transparent;
+}
+
+.__T_fancy_textfield_label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  //padding: 6px 36px 10px 12px;
+  padding: 16px 36px 10px 12px;
+  color: #5F6368;
+  //font-size: 10px;
+  font-size: 12px;
+  background: white;
+  z-index: 7;
+}
+
+.__T_fancy_textfield_block {
+  width: 100%;
+}
+
+.__T_fancy_textfield_validator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  z-index: 18;
+  width: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

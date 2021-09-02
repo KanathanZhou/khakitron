@@ -1,0 +1,195 @@
+@import "../../style/main";
+
+%__T_Chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2px 8px;
+
+  box-sizing: border-box;
+
+  @include fontWeightNormal;
+}
+
+.__T_Chip_normal {
+  @include fontSize12px;
+  @include lineHeight20px;
+}
+
+.__T_Chip_small {
+  @include fontSize10px;
+  @include lineHeight16px;
+}
+
+.__T_Chip_default_shape {
+  border-radius: 999px;
+}
+
+.__T_Chip_tag_shape {
+  border-radius: 4px;
+}
+
+.__T_Chip_default {
+  @extend %__T_Chip;
+  color: $jungletron-white;
+
+  &.__T_Chip_gray {
+    background: $jungletron-gray-300;
+  }
+
+  &.__T_Chip_basic {
+    background: $jungletron-gray-100;
+  }
+
+  &.__T_Chip_primary {
+    background: $jungletron-preset-primary-color;
+  }
+
+  &.__T_Chip_secondary {
+    background: $jungletron-preset-secondary-color;
+  }
+
+  &.__T_Chip_info {
+    background: $jungletron-preset-info-color;
+  }
+
+  &.__T_Chip_success {
+    background: $jungletron-preset-success-color;
+  }
+
+  &.__T_Chip_warning {
+    background: $jungletron-preset-warning-color;
+  }
+
+  &.__T_Chip_danger {
+    background: $jungletron-preset-danger-color;
+  }
+}
+
+.__T_Chip_contrast {
+  @extend %__T_Chip;
+
+  &.__T_Chip_gray {
+    background: $jungletron-gray-600;
+    color: $jungletron-gray-300;
+  }
+
+  &.__T_Chip_basic {
+    background: $jungletron-gray-600;
+    color: $jungletron-gray-100;
+  }
+
+  &.__T_Chip_primary {
+    background: $jungletron-preset-primary-300-color;
+    color: $jungletron-preset-primary-color;
+  }
+
+  &.__T_Chip_secondary {
+    background: $jungletron-preset-secondary-300-color;
+    color: $jungletron-preset-secondary-color;
+  }
+
+  &.__T_Chip_info {
+    background: $jungletron-preset-info-300-color;
+    color: $jungletron-preset-info-color;
+  }
+
+  &.__T_Chip_success {
+    background: $jungletron-preset-success-300-color;
+    color: $jungletron-preset-success-color;
+  }
+
+  &.__T_Chip_warning {
+    background: $jungletron-preset-warning-300-color;
+    color: $jungletron-preset-warning-color;
+  }
+
+  &.__T_Chip_danger {
+    background: $jungletron-preset-danger-300-color;
+    color: $jungletron-preset-danger-color;
+  }
+
+}
+
+.__T_Chip_outlined {
+  @extend %__T_Chip;
+
+  &.__T_Chip_gray {
+    box-shadow: inset 0 0 0 1px $jungletron-gray-300;
+    color: $jungletron-gray-300;
+  }
+
+  &.__T_Chip_basic {
+    box-shadow: inset 0 0 0 1px $jungletron-gray-100;
+    color: $jungletron-gray-100;
+  }
+
+  &.__T_Chip_primary {
+    box-shadow: inset 0 0 0 1px $jungletron-preset-primary-color;
+    color: $jungletron-preset-primary-color;
+  }
+
+  &.__T_Chip_secondary {
+    box-shadow: inset 0 0 0 1px $jungletron-preset-secondary-color;
+    color: $jungletron-preset-secondary-color;
+  }
+
+  &.__T_Chip_info {
+    box-shadow: inset 0 0 0 1px $jungletron-preset-info-color;
+    color: $jungletron-preset-info-color;
+  }
+
+  &.__T_Chip_success {
+    box-shadow: inset 0 0 0 1px $jungletron-preset-success-color;
+    color: $jungletron-preset-success-color;
+  }
+
+  &.__T_Chip_warning {
+    box-shadow: inset 0 0 0 1px $jungletron-preset-warning-color;
+    color: $jungletron-preset-warning-color;
+  }
+
+  &.__T_Chip_danger {
+    box-shadow: inset 0 0 0 1px $jungletron-preset-danger-color;
+    color: $jungletron-preset-danger-color;
+  }
+}
+
+.__T_Chip_stroked {
+  @extend %__T_Chip;
+
+  box-shadow: inset 0 0 0 1px $jungletron-gray-400;
+
+  &.__T_Chip_gray {
+    color: $jungletron-gray-300;
+  }
+
+  &.__T_Chip_basic {
+    color: $jungletron-gray-100;
+  }
+
+  &.__T_Chip_primary {
+    color: $jungletron-preset-primary-color;
+  }
+
+  &.__T_Chip_secondary {
+    color: $jungletron-preset-secondary-color;
+  }
+
+  &.__T_Chip_info {
+    color: $jungletron-preset-info-color;
+  }
+
+  &.__T_Chip_success {
+    color: $jungletron-preset-success-color;
+  }
+
+  &.__T_Chip_warning {
+    color: $jungletron-preset-warning-color;
+  }
+
+  &.__T_Chip_danger {
+    color: $jungletron-preset-danger-color;
+  }
+}

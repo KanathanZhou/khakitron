@@ -1,0 +1,44 @@
+@import "theme";
+
+/**
+ * var(a, b) means it is going to use the first param - a if a is existed, if not, using the backup plan - second parameter b
+ * Pass in the corresponding --jungletron-preset-color to change the variable value if user provided
+ */
+$jungletron-preset-primary-color: var(--jungletron-preset-primary-color, $primary);
+$jungletron-preset-primary-200-color: var(--jungletron-preset-primary-200-color, $primary-200);
+$jungletron-preset-primary-300-color: var(--jungletron-preset-primary-300-color, $primary-300);
+
+$jungletron-preset-secondary-color: var(--jungletron-preset-secondary-color, $secondary);
+$jungletron-preset-secondary-200-color: var(--jungletron-preset-secondary-200-color, $secondary-200);
+$jungletron-preset-secondary-300-color: var(--jungletron-preset-secondary-300-color, $secondary-300);
+
+$jungletron-preset-info-color: var(--jungletron-preset-info-color, $info);
+$jungletron-preset-info-200-color: var(--jungletron-preset-info-200-color, $info-200);
+$jungletron-preset-info-300-color: var(--jungletron-preset-info-300-color, $info-300);
+
+$jungletron-preset-success-color: var(--jungletron-preset-success-color, $success);
+$jungletron-preset-success-200-color: var(--jungletron-preset-success-200-color, $success-200);
+$jungletron-preset-success-300-color: var(--jungletron-preset-success-300-color, $success-300);
+
+$jungletron-preset-danger-color: var(--jungletron-preset-danger-color, $danger);
+$jungletron-preset-danger-200-color: var(--jungletron-preset-danger-200-color, $danger-200);
+$jungletron-preset-danger-300-color: var(--jungletron-preset-danger-300-color, $danger-300);
+
+$jungletron-preset-warning-color: var(--jungletron-preset-warning-color, $warning);
+$jungletron-preset-warning-200-color: var(--jungletron-preset-warning-200-color, $warning-200);
+$jungletron-preset-warning-300-color: var(--jungletron-preset-warning-300-color, $warning-300);
+
+
+$jungletron-preset-dark-color: var(--jungletron-preset-dark-color, $dark);
+$jungletron-preset-medium-color: var(--jungletron-preset-medium-color, $medium);
+$jungletron-preset-light-color: var(--jungletron-preset-light-color, $light);
+
+
+$jungletron-gray-100: #272834;
+$jungletron-gray-200: #7F8B95;
+$jungletron-gray-300: #A8B0B7;
+$jungletron-gray-400: #DBE0E9;
+$jungletron-gray-500: #E9EEF4;
+$jungletron-gray-600: #F5F7F9;
+$jungletron-white: #FFFFFF;
+

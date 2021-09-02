@@ -1,0 +1,81 @@
+@import "../../style/_main.scss";
+
+.__T_Tooltip {
+  position: relative;
+  display: inline-flex;
+
+  &.__T_Tooltip_center_horizontally {
+    justify-content: center;
+  }
+
+  &.__T_Tooltip_center_vertically {
+    align-items: center;
+  }
+}
+
+.__T_Tooltip_Content_Wrapper {
+  position: absolute;
+  z-index: 20002;
+
+  padding: 4px 8px;
+  background: #FFFFFF;
+  border: 1px solid #DBE0E9;
+  box-shadow: 0 4px 24px rgba(181, 181, 202, 0.2);
+  border-radius: 4px;
+
+  &.__T_Tooltip_top {
+    bottom: calc(100% + 6px);
+  }
+
+  &.__T_Tooltip_top_left {
+    bottom: calc(100% + 6px);
+    right: 0;
+  }
+
+  &.__T_Tooltip_top_right {
+    bottom: calc(100% + 6px);
+    left: 0;
+  }
+
+  &.__T_Tooltip_bottom {
+    top: calc(100% + 6px);
+  }
+
+  &.__T_Tooltip_bottom_left {
+    top: calc(100% + 6px);
+    right: 0;
+  }
+
+  &.__T_Tooltip_bottom_right {
+    top: calc(100% + 6px);
+    left: 0;
+  }
+
+  &.__T_Tooltip_left {
+    right: calc(100% + 6px);
+  }
+
+  &.__T_Tooltip_left_top {
+    right: calc(100% + 6px);
+    bottom: 0;
+  }
+
+  &.__T_Tooltip_left_bottom {
+    right: calc(100% + 6px);
+    top: 0;
+  }
+
+  &.__T_Tooltip_right {
+    left: calc(100% + 6px);
+  }
+
+  &.__T_Tooltip_right_top {
+    left: calc(100% + 6px);
+    bottom: 0;
+  }
+
+  &.__T_Tooltip_right_bottom {
+    left: calc(100% + 6px);
+    top: 0;
+  }
+}

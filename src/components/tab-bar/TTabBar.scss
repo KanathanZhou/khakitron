@@ -1,0 +1,27 @@
+@import "../../style/main";
+
+.__T_TabBar {
+  display: flex;
+  position: relative;
+  overflow: auto;
+
+  &.__T_TabBar_default {
+    height: 48px;
+  }
+
+  &.__T_TabBar_outlined {
+    height: 36px;
+    padding: 0 16px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    height: 1px;
+    background: $jungletron-gray-400;
+  }
+}

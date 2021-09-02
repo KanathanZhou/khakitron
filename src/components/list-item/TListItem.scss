@@ -1,0 +1,23 @@
+@import "variables";
+@import "../../style/main";
+
+.tListItem {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  color: #030303;
+  font-size: 14px;
+  font-weight: 500;
+
+  &:hover {
+    cursor: pointer;
+    background: #F3F3F3;
+  }
+}
+
+.tListItemActivated {
+  //background: #{$jungletron-preset-primary-color}10 !important;
+  background: #{$primary}10;
+  color: $jungletron-preset-primary-color#{10};
+}

@@ -1,0 +1,44 @@
+@import "variables";
+@import "../../style/animations";
+
+.tModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $t_modal_overlay;
+  z-index: 5000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tModal {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+}
+
+.tModalTile {
+  border-radius: 0;
+}
+
+.scaleAnimationStart {
+  animation-name: modalScaleBottom;
+  animation-duration: 270ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  transform-origin: bottom;
+}
+
+.scaleAnimationEnd {
+  animation-name: modalShrinkBottom;
+  animation-duration: 270ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  transform-origin: bottom;
+}

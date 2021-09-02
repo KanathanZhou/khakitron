@@ -1,0 +1,60 @@
+@use "sass:map";
+
+@import "variables";
+@import "../../style/_main.scss";
+
+.__T_Link_wrapper {
+  display: flex;
+  align-items: center;
+
+  color: inherit;
+
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.__T_Link_anchor {
+  text-decoration: none;
+  color: inherit;
+
+  font-size: inherit;
+  font-weight: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.__T_Link_xxLarge {
+  font-size: map.get($t-link-font-size, "xxLarge");
+  font-weight: map.get($t-link-font-weight, "xxLarge");
+}
+
+.__T_Link_xLarge {
+  font-size: map.get($t-link-font-size, "xLarge");
+  font-weight: map.get($t-link-font-weight, "xLarge");
+}
+
+
+.__T_Link_large {
+  font-size: map.get($t-link-font-size, "large");
+  font-weight: map.get($t-link-font-weight, "large");
+}
+
+
+.__T_Link_medium {
+  font-size: map.get($t-link-font-size, "medium");
+  font-weight: map.get($t-link-font-weight, "medium");
+}
+
+
+.__T_Link_small {
+  font-size: map.get($t-link-font-size, "small");
+  font-weight: map.get($t-link-font-weight, "small");
+}
+
+
+.__T_Link_xSmall {
+  font-size: map.get($t-link-font-size, "xSmall");
+  font-weight: map.get($t-link-font-weight, "xSmall");
+}

@@ -1,0 +1,66 @@
+@import "../../style/_main.scss";
+
+%__T_Breadcrumbs_Item_Raw_Destination {
+  @include transition270;
+  text-decoration: none;
+}
+
+%__T_Breadcrumbs_Raw_Divider {
+  padding: 0 4px;
+  &:hover {
+    cursor: default;
+  }
+}
+
+.__T_Breadcrumbs_Wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .__T_Breadcrumbs_Item {
+    display: flex;
+    @include fontSize14px;
+    @include lineHeight24px;
+
+    &:first-child {
+      .__T_Breadcrumbs_Divider {
+        display: none;
+      }
+    }
+
+    &:last-child {
+      .__T_Breadcrumbs_Item_Destination {
+        @extend %__T_Breadcrumbs_Item_Raw_Destination;
+        color: $jungletron-gray-100;
+        pointer-events: none;
+        &:hover {
+          cursor: default;
+        }
+      }
+
+      .__T_Breadcrumbs_Divider {
+        @extend %__T_Breadcrumbs_Raw_Divider;
+        color: $jungletron-gray-100;
+      }
+    }
+
+    &:not(:last-child) {
+      .__T_Breadcrumbs_Item_Destination {
+        @extend %__T_Breadcrumbs_Item_Raw_Destination;
+        color: $jungletron-gray-200;
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+
+      .__T_Breadcrumbs_Divider {
+        @extend %__T_Breadcrumbs_Raw_Divider;
+        color: $jungletron-gray-200;
+      }
+    }
+
+  }
+
+}
+

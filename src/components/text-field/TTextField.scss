@@ -1,0 +1,144 @@
+@import "variables";
+@import "../../style/_main.scss";
+
+.__T_TextField_Title {
+  margin-bottom: 8px;
+  @include fontSize16px;
+  @include fontWeight500;
+  color: $jungletron-gray-100;
+  line-height: 28px;
+}
+
+.__T_TextField_Input_Wrapper {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+%__T_TextField_Horizontal_External {
+  display: flex;
+  align-items: center;
+  padding: 6px 12px;
+  @include fontSize14px;
+  @include fontWeight400;
+  color: $jungletron-gray-200;
+  line-height: 24px;
+  text-align: center;
+  white-space: nowrap;
+  background-color: $jungletron-gray-600;
+}
+
+.__T_TextField_Prefix {
+  @extend %__T_TextField_Horizontal_External;
+  border-left: 1px solid $jungletron-gray-400;
+  border-top: 1px solid $jungletron-gray-400;
+  border-bottom: 1px solid $jungletron-gray-400;
+  border-radius: 4px 0 0 4px;
+}
+
+.__T_TextField_Suffix {
+  @extend %__T_TextField_Horizontal_External;
+  border-right: 1px solid $jungletron-gray-400;
+  border-top: 1px solid $jungletron-gray-400;
+  border-bottom: 1px solid $jungletron-gray-400;
+  border-radius: 0 4px 4px 0;
+}
+
+%__T_TextField_Input {
+  @include transition270;
+  width: inherit;
+  height: inherit;
+  box-sizing: border-box;
+
+  border-radius: 4px;
+
+  @include fontSize14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0 12px;
+
+  &:disabled {
+    border-color: $jungletron-gray-400;
+    background-color: $_text_field_disabled_background_color;
+  }
+
+  &::placeholder {
+    color: $jungletron-gray-400;
+    opacity: 1; /* Firefox */
+  }
+
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $jungletron-gray-400;
+  }
+
+  &::-ms-input-placeholder { /* Microsoft Edge */
+    color: $jungletron-gray-400;
+  }
+}
+
+.__T_TextField_Input_General {
+  @extend %__T_TextField_Input;
+  border: 1px solid $jungletron-gray-400;
+
+  &:hover:enabled {
+    border-color: $jungletron-gray-300;
+  }
+
+  &:focus:enabled {
+    border-color: $jungletron-preset-primary-color;
+    box-shadow: 0 0 0 4px $jungletron-preset-primary-300-color;
+    z-index: 10;
+  }
+
+  &:focus-visible:enabled {
+    outline: none;
+    border-color: $jungletron-preset-primary-color;
+    box-shadow: 0 0 0 4px $jungletron-preset-primary-300-color;
+    z-index: 10;
+  }
+}
+
+.__T_TextField_Input_Error {
+  @extend %__T_TextField_Input;
+  border: 1px solid $jungletron-preset-danger-color;
+
+  &:hover:enabled {
+    border-color: $jungletron-preset-danger-color;
+  }
+
+  &:focus:enabled {
+    border-color: $jungletron-preset-danger-color;
+  }
+
+  &:focus-visible:enabled {
+    outline: none;
+    border-color: $jungletron-preset-danger-color;
+  }
+}
+
+%__T_TextField_Description {
+  @include fontSize12px;
+  @include fontWeight400;
+  margin: 8px 0;
+}
+
+.__T_TextField_Hint {
+  @extend %__T_TextField_Description;
+  color: $jungletron-gray-200;
+  line-height: 12px;
+}
+
+.__T_TextField_Error_Message {
+  @extend %__T_TextField_Description;
+  color: $jungletron-preset-danger-color;
+  line-height: 12px;
+}
+
+.__T_TextField_Inset_Right_Position {
+  position: absolute;
+  top: 0;
+  right: 12px;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}

@@ -1,0 +1,35 @@
+@import "variables";
+@import "../../style/animations";
+
+.tPopover {
+  position: absolute;
+  background: white;
+  z-index: 99;
+  border-radius: 8px;
+  border: 1px solid #dadce0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+
+  overflow: hidden;
+}
+
+.tPopoverTile {
+  border-radius: 0;
+}
+
+.scaleAnimationStart {
+  animation-name: popoverScale;
+  animation-duration: 120ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  transform-origin: top right;
+}
+
+.scaleAnimationEnd {
+  animation-name: popoverShrink;
+  animation-duration: 270ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  transform-origin: top right;
+}

@@ -1,0 +1,29 @@
+.__T_snackbar_background {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+  align-items: flex-start;
+
+  .__T_snackbar_box {
+    min-width: 240px;
+    min-height: 40px;
+    max-width: 80%;
+    height: fit-content;
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    margin: 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+    box-sizing: border-box;
+    padding: 8px;
+    transition: all .2s;
+    pointer-events: auto;
+  }
+}

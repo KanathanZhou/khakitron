@@ -1,0 +1,600 @@
+@use "sass:map";
+
+@import "variables";
+@import "mixins";
+@import "../../style/_main.scss";
+
+%__T_Button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  -webkit-font-smoothing: antialiased;
+  font-size: inherit;
+  letter-spacing: inherit;
+  font-weight: 500;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  position: relative;
+
+  transition: all 270ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:disabled {
+    pointer-events: none;
+  }
+
+  &:active:enabled::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    content: '';
+    background: $jungletron-gray-100;
+    opacity: 0.05;
+    border-radius: inherit;
+  }
+
+  border-radius: 4px;
+  background: none;
+}
+
+.__T_Button_content {
+  align-items: center;
+  color: inherit;
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: inherit;
+  line-height: normal;
+  position: relative;
+  transition: inherit;
+  transition-property: opacity;
+}
+
+.__T_Button_default {
+  @extend %__T_Button;
+
+  &.__T_Button_basic {
+    color: $jungletron-white;
+    background-color: $jungletron-gray-100;
+
+    &:hover:enabled {
+      background-color: $jungletron-gray-200;
+    }
+  }
+
+  &.__T_Button_primary {
+    color: $jungletron-white;
+    background-color: $jungletron-preset-primary-color;
+
+    &:hover:enabled {
+      background-color: $jungletron-preset-primary-200-color;
+    }
+  }
+
+  &.__T_Button_secondary {
+    color: $jungletron-white;
+    background-color: $jungletron-preset-secondary-color;
+
+    &:hover:enabled {
+      background-color: $jungletron-preset-secondary-200-color;
+    }
+  }
+
+  &.__T_Button_info {
+    color: $jungletron-white;
+    background-color: $jungletron-preset-info-color;
+
+    &:hover:enabled {
+      background-color: $jungletron-preset-info-200-color;
+    }
+  }
+
+  &.__T_Button_success {
+    color: $jungletron-white;
+    background-color: $jungletron-preset-success-color;
+
+    &:hover:enabled {
+      background-color: $jungletron-preset-success-200-color;
+    }
+  }
+
+  &.__T_Button_warning {
+    color: $jungletron-white;
+    background-color: $jungletron-preset-warning-color;
+
+    &:hover:enabled {
+      background-color: $jungletron-preset-warning-200-color;
+    }
+  }
+
+  &.__T_Button_danger {
+    color: $jungletron-white;
+    background-color: $jungletron-preset-danger-color;
+
+    &:hover:enabled {
+      background-color: $jungletron-preset-danger-200-color;
+    }
+  }
+
+  &:hover:enabled {
+    cursor: pointer;
+  }
+
+  &:disabled {
+    color: $jungletron-white;
+    background-color: $jungletron-gray-400;
+  }
+}
+
+.__T_Button_outlined {
+  @extend %__T_Button;
+
+  &.__T_Button_basic {
+    color: $jungletron-gray-100;
+  }
+
+  &.__T_Button_primary {
+    color: $jungletron-preset-primary-color;
+  }
+
+  &.__T_Button_secondary {
+    color: $jungletron-preset-secondary-color;
+  }
+
+  &.__T_Button_info {
+    color: $jungletron-preset-info-color;
+  }
+
+  &.__T_Button_success {
+    color: $jungletron-preset-success-color;
+  }
+
+  &.__T_Button_warning {
+    color: $jungletron-preset-warning-color;
+  }
+
+  &.__T_Button_danger {
+    color: $jungletron-preset-danger-color;
+  }
+
+  &:hover:enabled {
+    cursor: pointer;
+    background-color: $jungletron-gray-600;
+  }
+
+  &:disabled {
+    color: $jungletron-gray-400;
+  }
+
+}
+
+.__T_Button_text {
+  @extend %__T_Button;
+
+  &.__T_Button_basic {
+    color: $jungletron-gray-100;
+  }
+
+  &.__T_Button_primary {
+    color: $jungletron-preset-primary-color;
+  }
+
+  &.__T_Button_secondary {
+    color: $jungletron-preset-secondary-color;
+  }
+
+  &.__T_Button_info {
+    color: $jungletron-preset-info-color;
+  }
+
+  &.__T_Button_success {
+    color: $jungletron-preset-success-color;
+  }
+
+  &.__T_Button_warning {
+    color: $jungletron-preset-warning-color;
+  }
+
+  &.__T_Button_danger {
+    color: $jungletron-preset-danger-color;
+  }
+
+  &:hover:enabled {
+    cursor: pointer;
+    background-color: $jungletron-gray-600;
+  }
+
+  &:disabled {
+    color: $jungletron-gray-400;
+  }
+}
+
+.__T_Button_stroked {
+  @extend %__T_Button;
+
+  &.__T_Button_basic {
+    color: $jungletron-gray-100;
+  }
+
+  &.__T_Button_primary {
+    color: $jungletron-preset-primary-color;
+  }
+
+  &.__T_Button_secondary {
+    color: $jungletron-preset-secondary-color;
+  }
+
+  &.__T_Button_info {
+    color: $jungletron-preset-info-color;
+  }
+
+  &.__T_Button_success {
+    color: $jungletron-preset-success-color;
+  }
+
+  &.__T_Button_warning {
+    color: $jungletron-preset-warning-color;
+  }
+
+  &.__T_Button_danger {
+    color: $jungletron-preset-danger-color;
+  }
+
+  &:hover:enabled {
+    cursor: pointer;
+    background-color: $jungletron-gray-600;
+  }
+
+  &:disabled {
+    color: $jungletron-gray-400;
+  }
+}
+
+.__T_Button_block {
+  width: 100%;
+}
+
+.__T_Button_tile {
+  border-radius: 0;
+}
+
+.__T_Button_icon {
+  font-weight: 0 !important;
+}
+
+.__T_Button_xxLarge {
+  height: map.get($t-button-heights, "xxLarge");
+  min-height: map.get($t-button-heights, "xxLage");
+  padding: map.get($t-button-padding, "xxLarge");
+  font-size: map.get($t-button-font-size, "xxLarge");
+  font-weight: map.get($t-button-font-weight, "xxLarge");
+
+  &.__T_Button_outlined {
+    &.__T_Button_basic {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $jungletron-gray-100);
+    }
+
+    &.__T_Button_primary {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $jungletron-preset-primary-color);
+    }
+
+    &.__T_Button_secondary {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $jungletron-preset-secondary-color);
+    }
+
+    &.__T_Button_info {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $jungletron-preset-info-color);
+    }
+
+    &.__T_Button_success {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $jungletron-preset-success-color);
+    }
+
+    &.__T_Button_warning {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $jungletron-preset-warning-color);
+    }
+
+    &.__T_Button_danger {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $jungletron-preset-danger-color);
+    }
+
+    &:disabled {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $jungletron-gray-400);
+    }
+  }
+
+  &.__T_Button_stroked {
+    @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $jungletron-gray-400);
+
+    &:disabled {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $jungletron-gray-400);
+    }
+  }
+
+  &.__T_Button_icon {
+    padding: map.get($t-button-icon-button-padding, "xxLarge");
+    font-size: map.get($t-button-icon-button-font-size, "xxLarge"); // since it is an icon button, I am assuming font-size is only for icons
+  }
+}
+
+.__T_Button_xLarge {
+  height: map.get($t-button-heights, "xLarge");
+  min-height: map.get($t-button-heights, "xLarge");
+  padding: map.get($t-button-padding, "xLarge");
+  font-size: map.get($t-button-font-size, "xLarge");
+  font-weight: map.get($t-button-font-weight, "xLarge");
+
+  &.__T_Button_outlined {
+    &.__T_Button_basic {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $jungletron-gray-100);
+    }
+
+    &.__T_Button_primary {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $jungletron-preset-primary-color);
+    }
+
+    &.__T_Button_secondary {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $jungletron-preset-secondary-color);
+    }
+
+    &.__T_Button_info {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $jungletron-preset-info-color);
+    }
+
+    &.__T_Button_success {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $jungletron-preset-success-color);
+    }
+
+    &.__T_Button_warning {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $jungletron-preset-warning-color);
+    }
+
+    &.__T_Button_danger {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $jungletron-preset-danger-color);
+    }
+
+    &:disabled {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $jungletron-gray-400);
+    }
+  }
+
+  &.__T_Button_stroked {
+    @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $jungletron-gray-400);
+
+    &:disabled {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $jungletron-gray-400);
+    }
+  }
+
+  &.__T_Button_icon {
+    padding: map.get($t-button-icon-button-padding, "xLarge");
+    font-size: map.get($t-button-icon-button-font-size, "xLarge");
+  }
+}
+
+.__T_Button_large {
+  height: map.get($t-button-heights, "large");
+  min-height: map.get($t-button-heights, "large");
+  padding: map.get($t-button-padding, "large");
+  font-size: map.get($t-button-font-size, "large");
+  font-weight: map.get($t-button-font-weight, "large");
+
+  &.__T_Button_outlined {
+    &.__T_Button_basic {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $jungletron-gray-100);
+    }
+
+    &.__T_Button_primary {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $jungletron-preset-primary-color);
+    }
+
+    &.__T_Button_secondary {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $jungletron-preset-secondary-color);
+    }
+
+    &.__T_Button_info {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $jungletron-preset-info-color);
+    }
+
+    &.__T_Button_success {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $jungletron-preset-success-color);
+    }
+
+    &.__T_Button_warning {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $jungletron-preset-warning-color);
+    }
+
+    &.__T_Button_danger {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $jungletron-preset-danger-color);
+    }
+
+    &:disabled {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $jungletron-gray-400);
+    }
+  }
+
+  &.__T_Button_stroked {
+    @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $jungletron-gray-400);
+
+    &:disabled {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $jungletron-gray-400);
+    }
+  }
+
+  &.__T_Button_icon {
+    padding: map.get($t-button-icon-button-padding, "large");
+    font-size: map.get($t-button-icon-button-font-size, "large");
+  }
+}
+
+.__T_Button_medium {
+  height: map.get($t-button-heights, "medium");
+  min-height: map.get($t-button-heights, "medium");
+  padding: map.get($t-button-padding, "medium");
+  font-size: map.get($t-button-font-size, "medium");
+  font-weight: map.get($t-button-font-weight, "medium");
+
+  &.__T_Button_outlined {
+    &.__T_Button_basic {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $jungletron-gray-100);
+    }
+
+    &.__T_Button_primary {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $jungletron-preset-primary-color);
+    }
+
+    &.__T_Button_secondary {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $jungletron-preset-secondary-color);
+    }
+
+    &.__T_Button_info {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $jungletron-preset-info-color);
+    }
+
+    &.__T_Button_success {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $jungletron-preset-success-color);
+    }
+
+    &.__T_Button_warning {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $jungletron-preset-warning-color);
+    }
+
+    &.__T_Button_danger {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $jungletron-preset-danger-color);
+    }
+
+    &:disabled {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $jungletron-gray-400);
+    }
+  }
+
+  &.__T_Button_stroked {
+    @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $jungletron-gray-400);
+
+    &:disabled {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $jungletron-gray-400);
+    }
+  }
+
+  &.__T_Button_icon {
+    padding: map.get($t-button-icon-button-padding, "medium");
+    font-size: map.get($t-button-icon-button-font-size, "medium");
+  }
+}
+
+.__T_Button_small {
+  height: map.get($t-button-heights, "small");
+  min-height: map.get($t-button-heights, "small");
+  padding: map.get($t-button-padding, "small");
+  font-size: map.get($t-button-font-size, "small");
+  font-weight: map.get($t-button-font-weight, "small");
+
+  &.__T_Button_outlined {
+    &.__T_Button_basic {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $jungletron-gray-100);
+    }
+
+    &.__T_Button_primary {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $jungletron-preset-primary-color);
+    }
+
+    &.__T_Button_secondary {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $jungletron-preset-secondary-color);
+    }
+
+    &.__T_Button_info {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $jungletron-preset-info-color);
+    }
+
+    &.__T_Button_success {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $jungletron-preset-success-color);
+    }
+
+    &.__T_Button_warning {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $jungletron-preset-warning-color);
+    }
+
+    &.__T_Button_danger {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $jungletron-preset-danger-color);
+    }
+
+    &:disabled {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $jungletron-gray-400);
+    }
+  }
+
+  &.__T_Button_stroked {
+    @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $jungletron-gray-400);
+
+    &:disabled {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $jungletron-gray-400);
+    }
+  }
+
+  &.__T_Button_icon {
+    padding: map.get($t-button-icon-button-padding, "small");
+    font-size: map.get($t-button-icon-button-font-size, "small");
+  }
+}
+
+.__T_Button_xSmall {
+  height: map.get($t-button-heights, "xSmall");
+  min-height: map.get($t-button-heights, "xSmall");
+  padding: map.get($t-button-padding, "xSmall");
+  font-size: map.get($t-button-font-size, "xSmall");
+  font-weight: map.get($t-button-font-weight, "xSmall");
+
+  &.__T_Button_outlined {
+    &.__T_Button_basic {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $jungletron-gray-100);
+    }
+
+    &.__T_Button_primary {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $jungletron-preset-primary-color);
+    }
+
+    &.__T_Button_secondary {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $jungletron-preset-secondary-color);
+    }
+
+    &.__T_Button_info {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $jungletron-preset-info-color);
+    }
+
+    &.__T_Button_success {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $jungletron-preset-success-color);
+    }
+
+    &.__T_Button_warning {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $jungletron-preset-warning-color);
+    }
+
+    &.__T_Button_danger {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $jungletron-preset-danger-color);
+    }
+
+    &:disabled {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $jungletron-gray-400);
+    }
+  }
+
+  &.__T_Button_stroked {
+    @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $jungletron-gray-400);
+
+    &:disabled {
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $jungletron-gray-400);
+    }
+  }
+
+  &.__T_Button_icon {
+    padding: map.get($t-button-icon-button-padding, "xSmall");
+    font-size: map.get($t-button-icon-button-font-size, "xSmall");
+  }
+}
+
+
+

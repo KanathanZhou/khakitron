@@ -1,0 +1,50 @@
+@use "sass:map";
+
+@import "../../style/_main.scss";
+@import "variables";
+
+.__T_Loader {
+  border: 2px solid $jungletron-gray-300;
+  border-top: 2px solid $jungletron-white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.__T_Loader_absolute {
+  position: absolute;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.__T_Loader_xxLarge {
+  width: map.get($t-loader-size, "xxLarge");
+  height: map.get($t-loader-size, "xxLarge");
+}
+
+.__T_Loader_xLarge {
+  width: map.get($t-loader-size, "xLarge");
+  height: map.get($t-loader-size, "xLarge");
+}
+
+.__T_Loader_large {
+  width: map.get($t-loader-size, "large");
+  height: map.get($t-loader-size, "large");
+}
+
+.__T_Loader_medium {
+  width: map.get($t-loader-size, "medium");
+  height: map.get($t-loader-size, "medium");
+}
+
+.__T_Loader_small {
+  width: map.get($t-loader-size, "small");
+  height: map.get($t-loader-size, "small");
+}
+
+.__T_Loader_xSmall {
+  width: map.get($t-loader-size, "xSmall");
+  height: map.get($t-loader-size, "xSmall");
+}
