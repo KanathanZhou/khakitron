@@ -33,7 +33,7 @@
     bottom: 0;
     top: 0;
     content: '';
-    background: $bluefeather-gray-100;
+    background: $khakitron-gray-100;
     opacity: 0.05;
     border-radius: inherit;
   }
@@ -58,65 +58,65 @@
   @extend %__T_Button;
 
   &.__T_Button_basic {
-    color: $bluefeather-white;
-    background-color: $bluefeather-gray-100;
+    color: $khakitron-white;
+    background-color: $khakitron-gray-100;
 
     &:hover:enabled {
-      background-color: $bluefeather-gray-200;
+      background-color: $khakitron-gray-200;
     }
   }
 
   &.__T_Button_primary {
-    color: $bluefeather-white;
-    background-color: $bluefeather-preset-primary-color;
+    color: $khakitron-white;
+    background-color: $khakitron-preset-primary-color;
 
     &:hover:enabled {
-      background-color: $bluefeather-preset-primary-200-color;
+      background-color: $khakitron-preset-primary-200-color;
     }
   }
 
   &.__T_Button_secondary {
-    color: $bluefeather-white;
-    background-color: $bluefeather-preset-secondary-color;
+    color: $khakitron-white;
+    background-color: $khakitron-preset-secondary-color;
 
     &:hover:enabled {
-      background-color: $bluefeather-preset-secondary-200-color;
+      background-color: $khakitron-preset-secondary-200-color;
     }
   }
 
   &.__T_Button_info {
-    color: $bluefeather-white;
-    background-color: $bluefeather-preset-info-color;
+    color: $khakitron-white;
+    background-color: $khakitron-preset-info-color;
 
     &:hover:enabled {
-      background-color: $bluefeather-preset-info-200-color;
+      background-color: $khakitron-preset-info-200-color;
     }
   }
 
   &.__T_Button_success {
-    color: $bluefeather-white;
-    background-color: $bluefeather-preset-success-color;
+    color: $khakitron-white;
+    background-color: $khakitron-preset-success-color;
 
     &:hover:enabled {
-      background-color: $bluefeather-preset-success-200-color;
+      background-color: $khakitron-preset-success-200-color;
     }
   }
 
   &.__T_Button_warning {
-    color: $bluefeather-white;
-    background-color: $bluefeather-preset-warning-color;
+    color: $khakitron-white;
+    background-color: $khakitron-preset-warning-color;
 
     &:hover:enabled {
-      background-color: $bluefeather-preset-warning-200-color;
+      background-color: $khakitron-preset-warning-200-color;
     }
   }
 
   &.__T_Button_danger {
-    color: $bluefeather-white;
-    background-color: $bluefeather-preset-danger-color;
+    color: $khakitron-white;
+    background-color: $khakitron-preset-danger-color;
 
     &:hover:enabled {
-      background-color: $bluefeather-preset-danger-200-color;
+      background-color: $khakitron-preset-danger-200-color;
     }
   }
 
@@ -125,8 +125,8 @@
   }
 
   &:disabled {
-    color: $bluefeather-white;
-    background-color: $bluefeather-gray-400;
+    color: $khakitron-white;
+    background-color: $khakitron-gray-400;
   }
 }
 
@@ -134,40 +134,40 @@
   @extend %__T_Button;
 
   &.__T_Button_basic {
-    color: $bluefeather-gray-100;
+    color: $khakitron-gray-100;
   }
 
   &.__T_Button_primary {
-    color: $bluefeather-preset-primary-color;
+    color: $khakitron-preset-primary-color;
   }
 
   &.__T_Button_secondary {
-    color: $bluefeather-preset-secondary-color;
+    color: $khakitron-preset-secondary-color;
   }
 
   &.__T_Button_info {
-    color: $bluefeather-preset-info-color;
+    color: $khakitron-preset-info-color;
   }
 
   &.__T_Button_success {
-    color: $bluefeather-preset-success-color;
+    color: $khakitron-preset-success-color;
   }
 
   &.__T_Button_warning {
-    color: $bluefeather-preset-warning-color;
+    color: $khakitron-preset-warning-color;
   }
 
   &.__T_Button_danger {
-    color: $bluefeather-preset-danger-color;
+    color: $khakitron-preset-danger-color;
   }
 
   &:hover:enabled {
     cursor: pointer;
-    background-color: $bluefeather-gray-600;
+    background-color: $khakitron-gray-600;
   }
 
   &:disabled {
-    color: $bluefeather-gray-400;
+    color: $khakitron-gray-400;
   }
 
 }
@@ -176,40 +176,40 @@
   @extend %__T_Button;
 
   &.__T_Button_basic {
-    color: $bluefeather-gray-100;
+    color: $khakitron-gray-100;
   }
 
   &.__T_Button_primary {
-    color: $bluefeather-preset-primary-color;
+    color: $khakitron-preset-primary-color;
   }
 
   &.__T_Button_secondary {
-    color: $bluefeather-preset-secondary-color;
+    color: $khakitron-preset-secondary-color;
   }
 
   &.__T_Button_info {
-    color: $bluefeather-preset-info-color;
+    color: $khakitron-preset-info-color;
   }
 
   &.__T_Button_success {
-    color: $bluefeather-preset-success-color;
+    color: $khakitron-preset-success-color;
   }
 
   &.__T_Button_warning {
-    color: $bluefeather-preset-warning-color;
+    color: $khakitron-preset-warning-color;
   }
 
   &.__T_Button_danger {
-    color: $bluefeather-preset-danger-color;
+    color: $khakitron-preset-danger-color;
   }
 
   &:hover:enabled {
     cursor: pointer;
-    background-color: $bluefeather-gray-600;
+    background-color: $khakitron-gray-600;
   }
 
   &:disabled {
-    color: $bluefeather-gray-400;
+    color: $khakitron-gray-400;
   }
 }
 
@@ -217,40 +217,40 @@
   @extend %__T_Button;
 
   &.__T_Button_basic {
-    color: $bluefeather-gray-100;
+    color: $khakitron-gray-100;
   }
 
   &.__T_Button_primary {
-    color: $bluefeather-preset-primary-color;
+    color: $khakitron-preset-primary-color;
   }
 
   &.__T_Button_secondary {
-    color: $bluefeather-preset-secondary-color;
+    color: $khakitron-preset-secondary-color;
   }
 
   &.__T_Button_info {
-    color: $bluefeather-preset-info-color;
+    color: $khakitron-preset-info-color;
   }
 
   &.__T_Button_success {
-    color: $bluefeather-preset-success-color;
+    color: $khakitron-preset-success-color;
   }
 
   &.__T_Button_warning {
-    color: $bluefeather-preset-warning-color;
+    color: $khakitron-preset-warning-color;
   }
 
   &.__T_Button_danger {
-    color: $bluefeather-preset-danger-color;
+    color: $khakitron-preset-danger-color;
   }
 
   &:hover:enabled {
     cursor: pointer;
-    background-color: $bluefeather-gray-600;
+    background-color: $khakitron-gray-600;
   }
 
   &:disabled {
-    color: $bluefeather-gray-400;
+    color: $khakitron-gray-400;
   }
 }
 
@@ -275,43 +275,43 @@
 
   &.__T_Button_outlined {
     &.__T_Button_basic {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $bluefeather-gray-100);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $khakitron-gray-100);
     }
 
     &.__T_Button_primary {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $bluefeather-preset-primary-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $khakitron-preset-primary-color);
     }
 
     &.__T_Button_secondary {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $bluefeather-preset-secondary-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $khakitron-preset-secondary-color);
     }
 
     &.__T_Button_info {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $bluefeather-preset-info-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $khakitron-preset-info-color);
     }
 
     &.__T_Button_success {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $bluefeather-preset-success-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $khakitron-preset-success-color);
     }
 
     &.__T_Button_warning {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $bluefeather-preset-warning-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $khakitron-preset-warning-color);
     }
 
     &.__T_Button_danger {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $bluefeather-preset-danger-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $khakitron-preset-danger-color);
     }
 
     &:disabled {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $bluefeather-gray-400);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $khakitron-gray-400);
     }
   }
 
   &.__T_Button_stroked {
-    @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $bluefeather-gray-400);
+    @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $khakitron-gray-400);
 
     &:disabled {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $bluefeather-gray-400);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xxLarge"), $khakitron-gray-400);
     }
   }
 
@@ -330,43 +330,43 @@
 
   &.__T_Button_outlined {
     &.__T_Button_basic {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $bluefeather-gray-100);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $khakitron-gray-100);
     }
 
     &.__T_Button_primary {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $bluefeather-preset-primary-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $khakitron-preset-primary-color);
     }
 
     &.__T_Button_secondary {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $bluefeather-preset-secondary-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $khakitron-preset-secondary-color);
     }
 
     &.__T_Button_info {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $bluefeather-preset-info-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $khakitron-preset-info-color);
     }
 
     &.__T_Button_success {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $bluefeather-preset-success-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $khakitron-preset-success-color);
     }
 
     &.__T_Button_warning {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $bluefeather-preset-warning-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $khakitron-preset-warning-color);
     }
 
     &.__T_Button_danger {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $bluefeather-preset-danger-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $khakitron-preset-danger-color);
     }
 
     &:disabled {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $bluefeather-gray-400);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $khakitron-gray-400);
     }
   }
 
   &.__T_Button_stroked {
-    @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $bluefeather-gray-400);
+    @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $khakitron-gray-400);
 
     &:disabled {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $bluefeather-gray-400);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xLarge"), $khakitron-gray-400);
     }
   }
 
@@ -385,43 +385,43 @@
 
   &.__T_Button_outlined {
     &.__T_Button_basic {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $bluefeather-gray-100);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $khakitron-gray-100);
     }
 
     &.__T_Button_primary {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $bluefeather-preset-primary-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $khakitron-preset-primary-color);
     }
 
     &.__T_Button_secondary {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $bluefeather-preset-secondary-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $khakitron-preset-secondary-color);
     }
 
     &.__T_Button_info {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $bluefeather-preset-info-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $khakitron-preset-info-color);
     }
 
     &.__T_Button_success {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $bluefeather-preset-success-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $khakitron-preset-success-color);
     }
 
     &.__T_Button_warning {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $bluefeather-preset-warning-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $khakitron-preset-warning-color);
     }
 
     &.__T_Button_danger {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $bluefeather-preset-danger-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $khakitron-preset-danger-color);
     }
 
     &:disabled {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $bluefeather-gray-400);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $khakitron-gray-400);
     }
   }
 
   &.__T_Button_stroked {
-    @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $bluefeather-gray-400);
+    @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $khakitron-gray-400);
 
     &:disabled {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $bluefeather-gray-400);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "large"), $khakitron-gray-400);
     }
   }
 
@@ -440,43 +440,43 @@
 
   &.__T_Button_outlined {
     &.__T_Button_basic {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $bluefeather-gray-100);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $khakitron-gray-100);
     }
 
     &.__T_Button_primary {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $bluefeather-preset-primary-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $khakitron-preset-primary-color);
     }
 
     &.__T_Button_secondary {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $bluefeather-preset-secondary-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $khakitron-preset-secondary-color);
     }
 
     &.__T_Button_info {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $bluefeather-preset-info-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $khakitron-preset-info-color);
     }
 
     &.__T_Button_success {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $bluefeather-preset-success-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $khakitron-preset-success-color);
     }
 
     &.__T_Button_warning {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $bluefeather-preset-warning-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $khakitron-preset-warning-color);
     }
 
     &.__T_Button_danger {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $bluefeather-preset-danger-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $khakitron-preset-danger-color);
     }
 
     &:disabled {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $bluefeather-gray-400);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $khakitron-gray-400);
     }
   }
 
   &.__T_Button_stroked {
-    @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $bluefeather-gray-400);
+    @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $khakitron-gray-400);
 
     &:disabled {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $bluefeather-gray-400);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "medium"), $khakitron-gray-400);
     }
   }
 
@@ -495,43 +495,43 @@
 
   &.__T_Button_outlined {
     &.__T_Button_basic {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $bluefeather-gray-100);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $khakitron-gray-100);
     }
 
     &.__T_Button_primary {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $bluefeather-preset-primary-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $khakitron-preset-primary-color);
     }
 
     &.__T_Button_secondary {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $bluefeather-preset-secondary-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $khakitron-preset-secondary-color);
     }
 
     &.__T_Button_info {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $bluefeather-preset-info-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $khakitron-preset-info-color);
     }
 
     &.__T_Button_success {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $bluefeather-preset-success-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $khakitron-preset-success-color);
     }
 
     &.__T_Button_warning {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $bluefeather-preset-warning-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $khakitron-preset-warning-color);
     }
 
     &.__T_Button_danger {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $bluefeather-preset-danger-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $khakitron-preset-danger-color);
     }
 
     &:disabled {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $bluefeather-gray-400);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $khakitron-gray-400);
     }
   }
 
   &.__T_Button_stroked {
-    @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $bluefeather-gray-400);
+    @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $khakitron-gray-400);
 
     &:disabled {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $bluefeather-gray-400);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "small"), $khakitron-gray-400);
     }
   }
 
@@ -550,43 +550,43 @@
 
   &.__T_Button_outlined {
     &.__T_Button_basic {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $bluefeather-gray-100);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $khakitron-gray-100);
     }
 
     &.__T_Button_primary {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $bluefeather-preset-primary-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $khakitron-preset-primary-color);
     }
 
     &.__T_Button_secondary {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $bluefeather-preset-secondary-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $khakitron-preset-secondary-color);
     }
 
     &.__T_Button_info {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $bluefeather-preset-info-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $khakitron-preset-info-color);
     }
 
     &.__T_Button_success {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $bluefeather-preset-success-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $khakitron-preset-success-color);
     }
 
     &.__T_Button_warning {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $bluefeather-preset-warning-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $khakitron-preset-warning-color);
     }
 
     &.__T_Button_danger {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $bluefeather-preset-danger-color);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $khakitron-preset-danger-color);
     }
 
     &:disabled {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $bluefeather-gray-400);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $khakitron-gray-400);
     }
   }
 
   &.__T_Button_stroked {
-    @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $bluefeather-gray-400);
+    @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $khakitron-gray-400);
 
     &:disabled {
-      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $bluefeather-gray-400);
+      @include outlinedBoxShadow(map.get($t-button-inset-shadow-depth, "xSmall"), $khakitron-gray-400);
     }
   }
 

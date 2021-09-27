@@ -32,38 +32,38 @@
 
 .__T_Chip_default {
   @extend %__T_Chip;
-  color: $bluefeather-white;
+  color: $khakitron-white;
 
   &.__T_Chip_gray {
-    background: $bluefeather-gray-300;
+    background: $khakitron-gray-300;
   }
 
   &.__T_Chip_basic {
-    background: $bluefeather-gray-100;
+    background: $khakitron-gray-100;
   }
 
   &.__T_Chip_primary {
-    background: $bluefeather-preset-primary-color;
+    background: $khakitron-preset-primary-color;
   }
 
   &.__T_Chip_secondary {
-    background: $bluefeather-preset-secondary-color;
+    background: $khakitron-preset-secondary-color;
   }
 
   &.__T_Chip_info {
-    background: $bluefeather-preset-info-color;
+    background: $khakitron-preset-info-color;
   }
 
   &.__T_Chip_success {
-    background: $bluefeather-preset-success-color;
+    background: $khakitron-preset-success-color;
   }
 
   &.__T_Chip_warning {
-    background: $bluefeather-preset-warning-color;
+    background: $khakitron-preset-warning-color;
   }
 
   &.__T_Chip_danger {
-    background: $bluefeather-preset-danger-color;
+    background: $khakitron-preset-danger-color;
   }
 }
 
@@ -71,43 +71,43 @@
   @extend %__T_Chip;
 
   &.__T_Chip_gray {
-    background: $bluefeather-gray-600;
-    color: $bluefeather-gray-300;
+    background: $khakitron-gray-600;
+    color: $khakitron-gray-300;
   }
 
   &.__T_Chip_basic {
-    background: $bluefeather-gray-600;
-    color: $bluefeather-gray-100;
+    background: $khakitron-gray-600;
+    color: $khakitron-gray-100;
   }
 
   &.__T_Chip_primary {
-    background: $bluefeather-preset-primary-300-color;
-    color: $bluefeather-preset-primary-color;
+    background: $khakitron-preset-primary-300-color;
+    color: $khakitron-preset-primary-color;
   }
 
   &.__T_Chip_secondary {
-    background: $bluefeather-preset-secondary-300-color;
-    color: $bluefeather-preset-secondary-color;
+    background: $khakitron-preset-secondary-300-color;
+    color: $khakitron-preset-secondary-color;
   }
 
   &.__T_Chip_info {
-    background: $bluefeather-preset-info-300-color;
-    color: $bluefeather-preset-info-color;
+    background: $khakitron-preset-info-300-color;
+    color: $khakitron-preset-info-color;
   }
 
   &.__T_Chip_success {
-    background: $bluefeather-preset-success-300-color;
-    color: $bluefeather-preset-success-color;
+    background: $khakitron-preset-success-300-color;
+    color: $khakitron-preset-success-color;
   }
 
   &.__T_Chip_warning {
-    background: $bluefeather-preset-warning-300-color;
-    color: $bluefeather-preset-warning-color;
+    background: $khakitron-preset-warning-300-color;
+    color: $khakitron-preset-warning-color;
   }
 
   &.__T_Chip_danger {
-    background: $bluefeather-preset-danger-300-color;
-    color: $bluefeather-preset-danger-color;
+    background: $khakitron-preset-danger-300-color;
+    color: $khakitron-preset-danger-color;
   }
 
 }
@@ -116,80 +116,80 @@
   @extend %__T_Chip;
 
   &.__T_Chip_gray {
-    box-shadow: inset 0 0 0 1px $bluefeather-gray-300;
-    color: $bluefeather-gray-300;
+    box-shadow: inset 0 0 0 1px $khakitron-gray-300;
+    color: $khakitron-gray-300;
   }
 
   &.__T_Chip_basic {
-    box-shadow: inset 0 0 0 1px $bluefeather-gray-100;
-    color: $bluefeather-gray-100;
+    box-shadow: inset 0 0 0 1px $khakitron-gray-100;
+    color: $khakitron-gray-100;
   }
 
   &.__T_Chip_primary {
-    box-shadow: inset 0 0 0 1px $bluefeather-preset-primary-color;
-    color: $bluefeather-preset-primary-color;
+    box-shadow: inset 0 0 0 1px $khakitron-preset-primary-color;
+    color: $khakitron-preset-primary-color;
   }
 
   &.__T_Chip_secondary {
-    box-shadow: inset 0 0 0 1px $bluefeather-preset-secondary-color;
-    color: $bluefeather-preset-secondary-color;
+    box-shadow: inset 0 0 0 1px $khakitron-preset-secondary-color;
+    color: $khakitron-preset-secondary-color;
   }
 
   &.__T_Chip_info {
-    box-shadow: inset 0 0 0 1px $bluefeather-preset-info-color;
-    color: $bluefeather-preset-info-color;
+    box-shadow: inset 0 0 0 1px $khakitron-preset-info-color;
+    color: $khakitron-preset-info-color;
   }
 
   &.__T_Chip_success {
-    box-shadow: inset 0 0 0 1px $bluefeather-preset-success-color;
-    color: $bluefeather-preset-success-color;
+    box-shadow: inset 0 0 0 1px $khakitron-preset-success-color;
+    color: $khakitron-preset-success-color;
   }
 
   &.__T_Chip_warning {
-    box-shadow: inset 0 0 0 1px $bluefeather-preset-warning-color;
-    color: $bluefeather-preset-warning-color;
+    box-shadow: inset 0 0 0 1px $khakitron-preset-warning-color;
+    color: $khakitron-preset-warning-color;
   }
 
   &.__T_Chip_danger {
-    box-shadow: inset 0 0 0 1px $bluefeather-preset-danger-color;
-    color: $bluefeather-preset-danger-color;
+    box-shadow: inset 0 0 0 1px $khakitron-preset-danger-color;
+    color: $khakitron-preset-danger-color;
   }
 }
 
 .__T_Chip_stroked {
   @extend %__T_Chip;
 
-  box-shadow: inset 0 0 0 1px $bluefeather-gray-400;
+  box-shadow: inset 0 0 0 1px $khakitron-gray-400;
 
   &.__T_Chip_gray {
-    color: $bluefeather-gray-300;
+    color: $khakitron-gray-300;
   }
 
   &.__T_Chip_basic {
-    color: $bluefeather-gray-100;
+    color: $khakitron-gray-100;
   }
 
   &.__T_Chip_primary {
-    color: $bluefeather-preset-primary-color;
+    color: $khakitron-preset-primary-color;
   }
 
   &.__T_Chip_secondary {
-    color: $bluefeather-preset-secondary-color;
+    color: $khakitron-preset-secondary-color;
   }
 
   &.__T_Chip_info {
-    color: $bluefeather-preset-info-color;
+    color: $khakitron-preset-info-color;
   }
 
   &.__T_Chip_success {
-    color: $bluefeather-preset-success-color;
+    color: $khakitron-preset-success-color;
   }
 
   &.__T_Chip_warning {
-    color: $bluefeather-preset-warning-color;
+    color: $khakitron-preset-warning-color;
   }
 
   &.__T_Chip_danger {
-    color: $bluefeather-preset-danger-color;
+    color: $khakitron-preset-danger-color;
   }
 }

@@ -150,15 +150,15 @@ export default class TButton extends Vue {
 
   getStyleVariables(): any {
 /*    return {
-      '--bluefeather-preset-primary-color': this.$parent.$bluefeather ? this.$parent.$bluefeather.theme['primary'] : this.$bluefeather.theme['primary'],
-      '--bluefeather-preset-secondary-color': this.$parent.$bluefeather ? this.$parent.$bluefeather.theme['secondary'] : this.$bluefeather.theme['secondary'],
-      '--bluefeather-preset-info-color': this.$parent.$bluefeather ? this.$parent.$bluefeather.theme['info'] : this.$bluefeather.theme['info'],
-      '--bluefeather-preset-success-color': this.$parent.$bluefeather ? this.$parent.$bluefeather.theme['success'] : this.$bluefeather.theme['success'],
-      '--bluefeather-preset-warning-color': this.$parent.$bluefeather ? this.$parent.$bluefeather.theme['warning'] : this.$bluefeather.theme['warning'],
-      '--bluefeather-preset-danger-color': this.$parent.$bluefeather ? this.$parent.$bluefeather.theme['danger'] : this.$bluefeather.theme['danger'],
-      '--bluefeather-preset-dark-color': this.$parent.$bluefeather ? this.$parent.$bluefeather.theme['dark'] : this.$bluefeather.theme['dark'],
-      '--bluefeather-preset-medium-color': this.$parent.$bluefeather ? this.$parent.$bluefeather.theme['medium'] : this.$bluefeather.theme['medium'],
-      '--bluefeather-preset-light-color': this.$parent.$bluefeather ? this.$parent.$bluefeather.theme['light'] : this.$bluefeather.theme['light'],
+      '--khakitron-preset-primary-color': this.$parent.$khakitron ? this.$parent.$khakitron.theme['primary'] : this.$khakitron.theme['primary'],
+      '--khakitron-preset-secondary-color': this.$parent.$khakitron ? this.$parent.$khakitron.theme['secondary'] : this.$khakitron.theme['secondary'],
+      '--khakitron-preset-info-color': this.$parent.$khakitron ? this.$parent.$khakitron.theme['info'] : this.$khakitron.theme['info'],
+      '--khakitron-preset-success-color': this.$parent.$khakitron ? this.$parent.$khakitron.theme['success'] : this.$khakitron.theme['success'],
+      '--khakitron-preset-warning-color': this.$parent.$khakitron ? this.$parent.$khakitron.theme['warning'] : this.$khakitron.theme['warning'],
+      '--khakitron-preset-danger-color': this.$parent.$khakitron ? this.$parent.$khakitron.theme['danger'] : this.$khakitron.theme['danger'],
+      '--khakitron-preset-dark-color': this.$parent.$khakitron ? this.$parent.$khakitron.theme['dark'] : this.$khakitron.theme['dark'],
+      '--khakitron-preset-medium-color': this.$parent.$khakitron ? this.$parent.$khakitron.theme['medium'] : this.$khakitron.theme['medium'],
+      '--khakitron-preset-light-color': this.$parent.$khakitron ? this.$parent.$khakitron.theme['light'] : this.$khakitron.theme['light'],
     };*/
   }
 

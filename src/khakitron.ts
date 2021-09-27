@@ -2,17 +2,17 @@
 import _Vue, {PluginFunction} from 'vue';
 import {install} from '@/install';
 import Theme from './style/_theme.scss';
-import {BlueFeatherTheme} from "../types/blue-feather.theme";
+import {KhakitronTheme} from "../types/khakitron.theme";
 
-export default class BlueFeather {
+export default class Khakitron {
   static install: PluginFunction<never> = install;
-  theme: BlueFeatherTheme = {};
+  theme: KhakitronTheme = {};
 
-  constructor(userPresetTheme?: BlueFeatherTheme) {
+  constructor(userPresetTheme?: KhakitronTheme) {
     this.injectUserPresetTheme(userPresetTheme);
   }
 
-  private injectUserPresetTheme(userPresetTheme?: BlueFeatherTheme): void {
+  private injectUserPresetTheme(userPresetTheme?: KhakitronTheme): void {
     if (userPresetTheme) {
       Object.keys(Theme).forEach((item: string) => {
         if ((userPresetTheme as any)[item]) {

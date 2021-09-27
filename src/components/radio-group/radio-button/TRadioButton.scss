@@ -9,7 +9,7 @@
   cursor: pointer;
   @include fontSize14px;
   @include fontWeight400;
-  color: $bluefeather-gray-100;
+  color: $khakitron-gray-100;
   line-height: $t-radio-button-line-height;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -26,7 +26,7 @@
   }
 
   &[disabled] {
-    color: $bluefeather-gray-400;
+    color: $khakitron-gray-400;
     pointer-events: none;
   }
 }
@@ -56,39 +56,39 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: $bluefeather-white;
+    background: $khakitron-white;
   }
 
   &[disabled] {
     &:after {
       left: 4px;
       top: 4px;
-      background: $bluefeather-gray-400;
+      background: $khakitron-gray-400;
     }
   }
 }
 
 /* On mouse-over, add a grey background color */
 .__T_RadioButton_container:hover input ~ .__T_RadioButton_radio {
-  background-color: $bluefeather-gray-600;
+  background-color: $khakitron-gray-600;
 }
 
 /* When the radio button is checked, add a blue background */
 .__T_RadioButton_container input:checked ~ .__T_RadioButton_radio {
-  background-color: $bluefeather-preset-primary-color;
+  background-color: $khakitron-preset-primary-color;
 
   &[disabled] {
-    border: 1px solid $bluefeather-gray-400;
-    background-color: $bluefeather-gray-600;
+    border: 1px solid $khakitron-gray-400;
+    background-color: $khakitron-gray-600;
   }
 }
 
 .__T_RadioButton_container input:not(:checked) ~ .__T_RadioButton_radio {
-  border: 1px solid $bluefeather-gray-100;
+  border: 1px solid $khakitron-gray-100;
 
   &[disabled] {
-    border-color: $bluefeather-gray-400;
-    background-color: $bluefeather-gray-600;
+    border-color: $khakitron-gray-400;
+    background-color: $khakitron-gray-600;
   }
 }
 

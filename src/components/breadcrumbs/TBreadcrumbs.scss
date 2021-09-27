@@ -31,7 +31,7 @@
     &:last-child {
       .__T_Breadcrumbs_Item_Destination {
         @extend %__T_Breadcrumbs_Item_Raw_Destination;
-        color: $bluefeather-gray-100;
+        color: $khakitron-gray-100;
         pointer-events: none;
         &:hover {
           cursor: default;
@@ -40,14 +40,14 @@
 
       .__T_Breadcrumbs_Divider {
         @extend %__T_Breadcrumbs_Raw_Divider;
-        color: $bluefeather-gray-100;
+        color: $khakitron-gray-100;
       }
     }
 
     &:not(:last-child) {
       .__T_Breadcrumbs_Item_Destination {
         @extend %__T_Breadcrumbs_Item_Raw_Destination;
-        color: $bluefeather-gray-200;
+        color: $khakitron-gray-200;
         &:hover {
           cursor: pointer;
           text-decoration: underline;
@@ -56,7 +56,7 @@
 
       .__T_Breadcrumbs_Divider {
         @extend %__T_Breadcrumbs_Raw_Divider;
-        color: $bluefeather-gray-200;
+        color: $khakitron-gray-200;
       }
     }
 

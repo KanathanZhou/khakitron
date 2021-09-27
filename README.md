@@ -1,38 +1,38 @@
-# Welcome to Blue Feather - An awesome VUE UI Framework
+# Welcome to Khakitron - An awesome VUE UI Framework
 
 ## Introduction
 
-BlueFeather is a vue ui framework which make use of the vue technologies and can be used in Vue 2.x versions.
+Khakitron is a vue ui framework which make use of the vue technologies and can be used in Vue 2.x versions.
 
 
 ## Installation
 
-`npm install bluefeather`
+`npm install khakitron`
 
 
 ## Project setup
 
-1. Create a folder named ```bluefeather``` under ```/src``` directory
-2. Create ```/src/bluefeather/index.ts```
-3. Put the following code inside ```/src/bluefeather/index.ts```:
+1. Create a folder named ```khakitron``` under ```/src``` directory
+2. Create ```/src/khakitron/index.ts```
+3. Put the following code inside ```/src/khakitron/index.ts```:
 
 ```
 import Vue from 'vue';
 
-import BlueFeather from 'bluefeather';
+import Khakitron from 'khakitron';
  
-Vue.use(BlueFeather);
+Vue.use(Khakitron);
  
-export default new BlueFeather();
+export default new Khakitron();
 ```
 
 4. in ```main.ts/js``` file, put following code inside:
 
 ```
-import bluefeather from '@/bluefeather';
+import khakitron from '@/khakitron';
 
 new Vue({
-  bluefeather, <---
+  khakitron, <---
   render: (h) => h(App),
 }).$mount('#app');
 

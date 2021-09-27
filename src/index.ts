@@ -1,13 +1,13 @@
-import BlueFeather from "@/blue-feather";
+import Khakitron from "@/khakitron";
 
-export default BlueFeather;
+export default Khakitron;
 
-const install = BlueFeather.install;
+const install = Khakitron.install;
 
-BlueFeather.install = (Vue, args) => {
-  install.call(BlueFeather, Vue, args);
+Khakitron.install = (Vue, args) => {
+  install.call(Khakitron, Vue, args);
 };
 
 if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(BlueFeather);
+  window.Vue.use(Khakitron);
 }

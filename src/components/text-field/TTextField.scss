@@ -5,7 +5,7 @@
   margin-bottom: 8px;
   @include fontSize16px;
   @include fontWeight500;
-  color: $bluefeather-gray-100;
+  color: $khakitron-gray-100;
   line-height: 28px;
 }
 
@@ -21,26 +21,26 @@
   padding: 6px 12px;
   @include fontSize14px;
   @include fontWeight400;
-  color: $bluefeather-gray-200;
+  color: $khakitron-gray-200;
   line-height: 24px;
   text-align: center;
   white-space: nowrap;
-  background-color: $bluefeather-gray-600;
+  background-color: $khakitron-gray-600;
 }
 
 .__T_TextField_Prefix {
   @extend %__T_TextField_Horizontal_External;
-  border-left: 1px solid $bluefeather-gray-400;
-  border-top: 1px solid $bluefeather-gray-400;
-  border-bottom: 1px solid $bluefeather-gray-400;
+  border-left: 1px solid $khakitron-gray-400;
+  border-top: 1px solid $khakitron-gray-400;
+  border-bottom: 1px solid $khakitron-gray-400;
   border-radius: 4px 0 0 4px;
 }
 
 .__T_TextField_Suffix {
   @extend %__T_TextField_Horizontal_External;
-  border-right: 1px solid $bluefeather-gray-400;
-  border-top: 1px solid $bluefeather-gray-400;
-  border-bottom: 1px solid $bluefeather-gray-400;
+  border-right: 1px solid $khakitron-gray-400;
+  border-top: 1px solid $khakitron-gray-400;
+  border-bottom: 1px solid $khakitron-gray-400;
   border-radius: 0 4px 4px 0;
 }
 
@@ -58,61 +58,61 @@
   padding: 0 12px;
 
   &:disabled {
-    border-color: $bluefeather-gray-400;
+    border-color: $khakitron-gray-400;
     background-color: $_text_field_disabled_background_color;
   }
 
   &::placeholder {
-    color: $bluefeather-gray-400;
+    color: $khakitron-gray-400;
     opacity: 1; /* Firefox */
   }
 
   &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: $bluefeather-gray-400;
+    color: $khakitron-gray-400;
   }
 
   &::-ms-input-placeholder { /* Microsoft Edge */
-    color: $bluefeather-gray-400;
+    color: $khakitron-gray-400;
   }
 }
 
 .__T_TextField_Input_General {
   @extend %__T_TextField_Input;
-  border: 1px solid $bluefeather-gray-400;
+  border: 1px solid $khakitron-gray-400;
 
   &:hover:enabled {
-    border-color: $bluefeather-gray-300;
+    border-color: $khakitron-gray-300;
   }
 
   &:focus:enabled {
-    border-color: $bluefeather-preset-primary-color;
-    box-shadow: 0 0 0 4px $bluefeather-preset-primary-300-color;
+    border-color: $khakitron-preset-primary-color;
+    box-shadow: 0 0 0 4px $khakitron-preset-primary-300-color;
     z-index: 10;
   }
 
   &:focus-visible:enabled {
     outline: none;
-    border-color: $bluefeather-preset-primary-color;
-    box-shadow: 0 0 0 4px $bluefeather-preset-primary-300-color;
+    border-color: $khakitron-preset-primary-color;
+    box-shadow: 0 0 0 4px $khakitron-preset-primary-300-color;
     z-index: 10;
   }
 }
 
 .__T_TextField_Input_Error {
   @extend %__T_TextField_Input;
-  border: 1px solid $bluefeather-preset-danger-color;
+  border: 1px solid $khakitron-preset-danger-color;
 
   &:hover:enabled {
-    border-color: $bluefeather-preset-danger-color;
+    border-color: $khakitron-preset-danger-color;
   }
 
   &:focus:enabled {
-    border-color: $bluefeather-preset-danger-color;
+    border-color: $khakitron-preset-danger-color;
   }
 
   &:focus-visible:enabled {
     outline: none;
-    border-color: $bluefeather-preset-danger-color;
+    border-color: $khakitron-preset-danger-color;
   }
 }
 
@@ -124,13 +124,13 @@
 
 .__T_TextField_Hint {
   @extend %__T_TextField_Description;
-  color: $bluefeather-gray-200;
+  color: $khakitron-gray-200;
   line-height: 12px;
 }
 
 .__T_TextField_Error_Message {
   @extend %__T_TextField_Description;
-  color: $bluefeather-preset-danger-color;
+  color: $khakitron-preset-danger-color;
   line-height: 12px;
 }
 

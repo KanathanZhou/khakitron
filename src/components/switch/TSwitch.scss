@@ -37,7 +37,7 @@
   box-shadow: inset 0 0 0 1px #DBE0E9;
 
   &[disabled] {
-    background: $bluefeather-gray-500;
+    background: $khakitron-gray-500;
   }
 }
 
@@ -55,10 +55,10 @@
 }
 
 input:checked + .__T_Switch_Slider {
-  background-color: $bluefeather-preset-primary-color;
+  background-color: $khakitron-preset-primary-color;
 
   &[disabled] {
-    background: $bluefeather-preset-primary-300-color;
+    background: $khakitron-preset-primary-300-color;
   }
 }
 

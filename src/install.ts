@@ -1,10 +1,10 @@
 /* tslint:disable:no-shadowed-variable */
 import _Vue from 'vue';
-import BlueFeather from "../types"; // !! mandatory for this.$bluefeather because module augmentation is over there
+import Khakitron from "../types"; // !! mandatory for this.$khakitron because module augmentation is over there
 import * as components from './components/index';
 import * as directives from './directives/index';
 
-const ATTRIBUTE_THEME_NAME: string = 'bluefeather-theme';
+const ATTRIBUTE_THEME_NAME: string = 'khakitron-theme';
 
 export function install(Vue: typeof _Vue, options?: any): void {
 
@@ -28,12 +28,12 @@ export function install(Vue: typeof _Vue, options?: any): void {
   Vue.mixin({
     beforeCreate() {
       const options = this.$options as any;
-      if (options.bluefeather) {
+      if (options.khakitron) {
         // setAttribute will make our custom style working, especially those mixins.
         window.document.documentElement.setAttribute(ATTRIBUTE_THEME_NAME, ATTRIBUTE_THEME_NAME);
-        this.$bluefeather = Vue.observable(options.bluefeather);
+        this.$khakitron = Vue.observable(options.khakitron);
       } else {
-        this.$bluefeather = (options.parent && options.parent.$bluefeather) || this;
+        this.$khakitron = (options.parent && options.parent.$khakitron) || this;
       }
     },
   });

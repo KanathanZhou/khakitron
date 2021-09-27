@@ -1,7 +1,7 @@
 /**
  * Can be more complex, but it is good for now
  */
-export interface BlueFeatherTheme {
+export interface KhakitronTheme {
   primary?: string;
   accent?: string;
   tertiary?: string;

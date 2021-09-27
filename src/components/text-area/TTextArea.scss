@@ -5,7 +5,7 @@
   margin-bottom: 8px;
   @include fontSize16px;
   @include fontWeight500;
-  color: $bluefeather-gray-100;
+  color: $khakitron-gray-100;
   line-height: 28px;
 }
 
@@ -23,59 +23,59 @@
   padding: 6px 12px;
 
   &:disabled {
-    border-color: $bluefeather-gray-400;
+    border-color: $khakitron-gray-400;
     background-color: $_text_area_disabled_background_color;
   }
 
   &::placeholder {
-    color: $bluefeather-gray-400;
+    color: $khakitron-gray-400;
     opacity: 1; /* Firefox */
   }
 
   &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: $bluefeather-gray-400;
+    color: $khakitron-gray-400;
   }
 
   &::-ms-input-placeholder { /* Microsoft Edge */
-    color: $bluefeather-gray-400;
+    color: $khakitron-gray-400;
   }
 }
 
 .__T_TextArea_General {
   @extend %__T_TextArea;
-  border: 1px solid $bluefeather-gray-400;
+  border: 1px solid $khakitron-gray-400;
 
   &:hover:enabled {
-    border-color: $bluefeather-gray-300;
+    border-color: $khakitron-gray-300;
   }
 
   &:focus:enabled {
-    border-color: $bluefeather-preset-primary-color;
-    box-shadow: 0 0 0 4px $bluefeather-preset-primary-300-color;
+    border-color: $khakitron-preset-primary-color;
+    box-shadow: 0 0 0 4px $khakitron-preset-primary-300-color;
   }
 
   &:focus-visible:enabled {
     outline: none;
-    border-color: $bluefeather-preset-primary-color;
-    box-shadow: 0 0 0 4px $bluefeather-preset-primary-300-color;
+    border-color: $khakitron-preset-primary-color;
+    box-shadow: 0 0 0 4px $khakitron-preset-primary-300-color;
   }
 }
 
 .__T_TextArea_Error {
   @extend %__T_TextArea;
-  border: 1px solid $bluefeather-preset-danger-color;
+  border: 1px solid $khakitron-preset-danger-color;
 
   &:hover:enabled {
-    border-color: $bluefeather-preset-danger-color;
+    border-color: $khakitron-preset-danger-color;
   }
 
   &:focus:enabled {
-    border-color: $bluefeather-preset-danger-color;
+    border-color: $khakitron-preset-danger-color;
   }
 
   &:focus-visible:enabled {
     outline: none;
-    border-color: $bluefeather-preset-danger-color;
+    border-color: $khakitron-preset-danger-color;
   }
 }
 
@@ -91,12 +91,12 @@
 
 .__T_TextArea_Hint {
   @extend %__T_TextArea_Description;
-  color: $bluefeather-gray-200;
+  color: $khakitron-gray-200;
   line-height: 12px;
 }
 
 .__T_TextArea_Error_Message {
   @extend %__T_TextArea_Description;
-  color: $bluefeather-preset-danger-color;
+  color: $khakitron-preset-danger-color;
   line-height: 12px;
 }

@@ -1,43 +1,43 @@
 import Vue from 'vue';
 import {PluginFunction} from 'vue';
 import {DefaultComputed, DefaultData, DefaultMethods, DefaultProps, PropsDefinition} from 'vue/types/options';
-import {BlueFeatherTheme} from "./blue-feather.theme";
+import {KhakitronTheme} from "./khakitron.theme";
 
-declare const BlueFeather: BlueFeather;
-export default BlueFeather;
+declare const Khakitron: Khakitron;
+export default Khakitron;
 
-export interface BlueFeather {
+export interface Khakitron {
   install: PluginFunction<never>;
-  theme: BlueFeatherTheme;
-  new (userPresetTheme?: BlueFeatherTheme): BlueFeather;
+  theme: KhakitronTheme;
+  new (userPresetTheme?: KhakitronTheme): Khakitron;
 }
 
 /**
  * @inheritDoc: https://vuejs.org/v2/guide/typescript.html#Augmenting-Types-for-Use-with-Plugins
  * module augmentation
- * @override: below declaration allows us to use $bluefeather in the project
+ * @override: below declaration allows us to use $khakitron in the project
  */
 declare module 'vue/types/vue' {
   export interface Vue {
-    $bluefeather: BlueFeather;
+    $khakitron: Khakitron;
   }
 
 /*  export interface VueConstructor<
     V extends Vue = Vue
     > {
-    //  $_bluefeather_installed will be used to judge if this framework has been installed.
-    //  If this framework has been installed, $_bluefeather_installed will be true instead of undefined.
-    $_bluefeather_installed?: true;
-    $bluefeather: BlueFeather;
+    //  $_khakitron_installed will be used to judge if this framework has been installed.
+    //  If this framework has been installed, $_khakitron_installed will be true instead of undefined.
+    $_khakitron_installed?: true;
+    $khakitron: Khakitron;
   }*/
 }
 
 /**
  * @inheritDoc: https://vuejs.org/v2/guide/typescript.html#Augmenting-Types-for-Use-with-Plugins
  * module augmentation
- * @override: below declaration allows us to add bluefeather as an option in the Vue initialization like below:
+ * @override: below declaration allows us to add khakitron as an option in the Vue initialization like below:
  * new Vue({
- *   bluefeather, <-- like this
+ *   khakitron, <-- like this
  *   render: (h) => h(App),
  * }).$mount('#app');
  *
@@ -45,7 +45,7 @@ declare module 'vue/types/vue' {
  * Vue.mixin({
  *   beforeCreate () {
  *     const options = this.$options as any
- *     if (options.bluefeather) {
+ *     if (options.khakitron) {
  *       ...
  *     }
  *   },
@@ -59,7 +59,7 @@ declare module 'vue/types/options' {
     Computed=DefaultComputed,
     PropsDef=PropsDefinition<DefaultProps>,
     Props=DefaultProps> {
-    bluefeather?: BlueFeather;
+    khakitron?: Khakitron;
   }
 
 }
