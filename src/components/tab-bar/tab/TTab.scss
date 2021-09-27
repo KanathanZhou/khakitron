@@ -24,7 +24,7 @@
   @include lineHeight24px;
 
   &[disabled] {
-    color: $jungletron-gray-400;
+    color: $bluefeather-gray-400;
     pointer-events: none;
   }
 }
@@ -32,11 +32,11 @@
 .__T_Tab_default {
   @extend %__T_Tab;
   padding: 0 4px;
-  color: $jungletron-gray-100;
+  color: $bluefeather-gray-100;
   margin: 0 24px;
 
   &:hover {
-    background: $jungletron-gray-600;
+    background: $bluefeather-gray-600;
   }
 
   &:first-child {
@@ -48,20 +48,20 @@
   }
 
   &.__T_Tab_Activated {
-    color: $jungletron-preset-primary-color;
+    color: $bluefeather-preset-primary-color;
     position: relative;
 
     &::before {
       @extend %__T_Tab_Activate_Indicator;
-      background: $jungletron-preset-primary-color;
+      background: $bluefeather-preset-primary-color;
     }
 
     &[disabled] {
-      color: $jungletron-gray-400;
+      color: $bluefeather-gray-400;
 
       &::before {
         @extend %__T_Tab_Activate_Indicator;
-        background: $jungletron-gray-400;
+        background: $bluefeather-gray-400;
       }
     }
   }
@@ -70,26 +70,26 @@
 .__T_Tab_outlined {
   @extend %__T_Tab;
   padding: 0 16px;
-  color: $jungletron-gray-200;
+  color: $bluefeather-gray-200;
 
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
 
   &:hover {
-    background: $jungletron-gray-600;
+    background: $bluefeather-gray-600;
 
     &::before {
       @extend %__T_Tab_Activate_Indicator;
-      background: $jungletron-gray-400;
+      background: $bluefeather-gray-400;
     }
   }
 
   &.__T_Tab_Activated {
-    color: $jungletron-gray-100;
-    box-shadow: inset 0 0 0 1px $jungletron-gray-400;
+    color: $bluefeather-gray-100;
+    box-shadow: inset 0 0 0 1px $bluefeather-gray-400;
 
     &[disabled] {
-      color: $jungletron-gray-400;
+      color: $bluefeather-gray-400;
     }
 
     // I put a white line at the bottom to hide the tabBar's bottom border, not the best solution but for now I can't think of a better one
@@ -97,7 +97,7 @@
       @extend %__T_Tab_Activate_Indicator;
       left: 1px;
       right: 1px;
-      background: $jungletron-white;
+      background: $bluefeather-white;
     }
   }
 }

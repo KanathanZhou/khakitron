@@ -5,7 +5,7 @@
   margin-bottom: 8px;
   @include fontSize16px;
   @include fontWeight500;
-  color: $jungletron-gray-100;
+  color: $bluefeather-gray-100;
   line-height: 28px;
 }
 
@@ -16,7 +16,7 @@
 
 .__T_Select_Bar {
   box-sizing: border-box;
-  border: 1px solid $jungletron-gray-400;
+  border: 1px solid $bluefeather-gray-400;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,24 +24,24 @@
 
   @include fontSize14px;
   @include fontWeight400;
-  color: $jungletron-gray-100;
+  color: $bluefeather-gray-100;
 
   padding: 0 12px;
   @include border_radius_4px;
 
   &[disabled] {
-    color: $jungletron-gray-300;
+    color: $bluefeather-gray-300;
     background-color: $_select_item_hover_background;
   }
 
   &.__T_Select_Bar_Error {
-    border-color: $jungletron-preset-danger-color;
+    border-color: $bluefeather-preset-danger-color;
   }
 }
 
 .__T_Select_Items_Wrapper {
   position: absolute;
-  background: $jungletron-white;
+  background: $bluefeather-white;
   top: calc(100% + 4px);
   left: 0;
   right: 0;
@@ -49,13 +49,13 @@
 
   box-shadow: 0 8px 32px 0 rgba(181, 181, 202, 0.45);
   @include border_radius_4px;
-  border: 1px solid $jungletron-gray-400;
+  border: 1px solid $bluefeather-gray-400;
 }
 
 .__T_Select_Item {
   position: relative;
   @include transition270;
-  color: $jungletron-gray-100;
+  color: $bluefeather-gray-100;
   padding: 8px 12px;
   @include fontSize14px;
   @include fontWeight400;
@@ -65,17 +65,17 @@
   text-overflow: ellipsis;
 
   &:hover {
-    color: $jungletron-preset-primary-color;
+    color: $bluefeather-preset-primary-color;
     background: $_select_item_hover_background;
   }
 
   &.__T_Select_Item_Active {
-    color: $jungletron-preset-primary-color;
+    color: $bluefeather-preset-primary-color;
   }
 
   &[disabled] {
     pointer-events: none;
-    color: $jungletron-gray-400;
+    color: $bluefeather-gray-400;
   }
 
   &:first-child {
@@ -90,13 +90,13 @@
 
 /*.__T_Select_Items_Wrapper div {
   @include transition270;
-  color: $jungletron-gray-100;
+  color: $bluefeather-gray-100;
   padding: 8px 12px;
   @include fontSize14px;
   @include fontWeight400;
 
   &:hover {
-    color: $jungletron-preset-primary-color;
+    color: $bluefeather-preset-primary-color;
     background: $_select_item_hover_background;
   }
 }*/
@@ -109,13 +109,13 @@
 
 .__T_Select_Hint {
   @extend %__T_Select_Description;
-  color: $jungletron-gray-200;
+  color: $bluefeather-gray-200;
   line-height: 12px;
 }
 
 .__T_Select_Error_Message {
   @extend %__T_Select_Description;
-  color: $jungletron-preset-danger-color;
+  color: $bluefeather-preset-danger-color;
   line-height: 12px;
 }
 
@@ -128,5 +128,5 @@
 }
 
 .__T_Select_Bar_placeholder {
-  color: $jungletron-gray-400;
+  color: $bluefeather-gray-400;
 }

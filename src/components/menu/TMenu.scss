@@ -18,7 +18,7 @@
 
 .__T_Menu_Items_Wrapper {
   position: absolute;
-  background: $jungletron-white;
+  background: $bluefeather-white;
   top: calc(100% + 4px);
   left: 0;
   right: 0;
@@ -26,7 +26,7 @@
 
   box-shadow: 0 8px 32px 0 rgba(181, 181, 202, 0.45);
   @include border_radius_4px;
-  border: 1px solid $jungletron-gray-400;
+  border: 1px solid $bluefeather-gray-400;
 }
 
 .__T_Menu_Item {
@@ -40,22 +40,22 @@
   text-overflow: ellipsis;
 
   &.__T_Menu_Item_primary {
-    color: $jungletron-gray-100;
+    color: $bluefeather-gray-100;
 
     &:hover {
-      color: $jungletron-preset-primary-color;
+      color: $bluefeather-preset-primary-color;
     }
 
     &.__T_Menu_Item_Active {
-      color: $jungletron-preset-primary-color;
+      color: $bluefeather-preset-primary-color;
     }
   }
 
   &.__T_Menu_Item_danger {
-    color: $jungletron-preset-danger-color;
+    color: $bluefeather-preset-danger-color;
 
     &.__T_Menu_Item_Active {
-      color: $jungletron-preset-danger-color;
+      color: $bluefeather-preset-danger-color;
     }
   }
 
@@ -66,7 +66,7 @@
 
   &[disabled] {
     pointer-events: none;
-    color: $jungletron-gray-400;
+    color: $bluefeather-gray-400;
   }
 
   &:first-child {

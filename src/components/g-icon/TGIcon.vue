@@ -59,7 +59,7 @@ export default class TGIcon extends Vue {
   }
 
   /**
-   * TGIcon should have extremely strong synergy with other jungletron component
+   * TGIcon should have extremely strong synergy with other component
    * which should automatically configure the specs like margin for users
    */
   getIconMargin(): string {

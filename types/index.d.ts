@@ -1,43 +1,43 @@
 import Vue from 'vue';
 import {PluginFunction} from 'vue';
 import {DefaultComputed, DefaultData, DefaultMethods, DefaultProps, PropsDefinition} from 'vue/types/options';
-import {JungletronTheme} from './jungletron-theme';
+import {BlueFeatherTheme} from "./blue-feather.theme";
 
-declare const Jungletron: Jungletron;
-export default Jungletron;
+declare const BlueFeather: BlueFeather;
+export default BlueFeather;
 
-export interface Jungletron {
+export interface BlueFeather {
   install: PluginFunction<never>;
-  theme: JungletronTheme;
-  new (userPresetTheme?: JungletronTheme): Jungletron;
+  theme: BlueFeatherTheme;
+  new (userPresetTheme?: BlueFeatherTheme): BlueFeather;
 }
 
 /**
  * @inheritDoc: https://vuejs.org/v2/guide/typescript.html#Augmenting-Types-for-Use-with-Plugins
  * module augmentation
- * @override: below declaration allows us to use $jungletron in the project
+ * @override: below declaration allows us to use $bluefeather in the project
  */
 declare module 'vue/types/vue' {
   export interface Vue {
-    $jungletron: Jungletron;
+    $bluefeather: BlueFeather;
   }
 
 /*  export interface VueConstructor<
     V extends Vue = Vue
     > {
-    //  $_jungletron_installed will be used to judge if this framework has been installed.
-    //  If this framework has been installed, $_jungletron_installed will be true instead of undefined.
-    $_jungletron_installed?: true;
-    $jungletron: Jungletron;
+    //  $_bluefeather_installed will be used to judge if this framework has been installed.
+    //  If this framework has been installed, $_bluefeather_installed will be true instead of undefined.
+    $_bluefeather_installed?: true;
+    $bluefeather: BlueFeather;
   }*/
 }
 
 /**
  * @inheritDoc: https://vuejs.org/v2/guide/typescript.html#Augmenting-Types-for-Use-with-Plugins
  * module augmentation
- * @override: below declaration allows us to add jungletron as an option in the Vue initialization like below:
+ * @override: below declaration allows us to add bluefeather as an option in the Vue initialization like below:
  * new Vue({
- *   jungletron, <-- like this
+ *   bluefeather, <-- like this
  *   render: (h) => h(App),
  * }).$mount('#app');
  *
@@ -45,16 +45,12 @@ declare module 'vue/types/vue' {
  * Vue.mixin({
  *   beforeCreate () {
  *     const options = this.$options as any
- *     if (options.jungletron) {
+ *     if (options.bluefeather) {
  *       ...
  *     }
  *   },
  */
 declare module 'vue/types/options' {
-
-/*  export interface ComponentOptions<V extends Vue> {
-    jungletron?: Jungletron
-  }*/
 
   export interface ComponentOptions<
     V extends Vue,
@@ -63,7 +59,7 @@ declare module 'vue/types/options' {
     Computed=DefaultComputed,
     PropsDef=PropsDefinition<DefaultProps>,
     Props=DefaultProps> {
-    jungletron?: Jungletron;
+    bluefeather?: BlueFeather;
   }
 
 }

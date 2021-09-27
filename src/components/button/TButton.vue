@@ -150,15 +150,15 @@ export default class TButton extends Vue {
 
   getStyleVariables(): any {
 /*    return {
-      '--jungletron-preset-primary-color': this.$parent.$jungletron ? this.$parent.$jungletron.theme['primary'] : this.$jungletron.theme['primary'],
-      '--jungletron-preset-secondary-color': this.$parent.$jungletron ? this.$parent.$jungletron.theme['secondary'] : this.$jungletron.theme['secondary'],
-      '--jungletron-preset-info-color': this.$parent.$jungletron ? this.$parent.$jungletron.theme['info'] : this.$jungletron.theme['info'],
-      '--jungletron-preset-success-color': this.$parent.$jungletron ? this.$parent.$jungletron.theme['success'] : this.$jungletron.theme['success'],
-      '--jungletron-preset-warning-color': this.$parent.$jungletron ? this.$parent.$jungletron.theme['warning'] : this.$jungletron.theme['warning'],
-      '--jungletron-preset-danger-color': this.$parent.$jungletron ? this.$parent.$jungletron.theme['danger'] : this.$jungletron.theme['danger'],
-      '--jungletron-preset-dark-color': this.$parent.$jungletron ? this.$parent.$jungletron.theme['dark'] : this.$jungletron.theme['dark'],
-      '--jungletron-preset-medium-color': this.$parent.$jungletron ? this.$parent.$jungletron.theme['medium'] : this.$jungletron.theme['medium'],
-      '--jungletron-preset-light-color': this.$parent.$jungletron ? this.$parent.$jungletron.theme['light'] : this.$jungletron.theme['light'],
+      '--bluefeather-preset-primary-color': this.$parent.$bluefeather ? this.$parent.$bluefeather.theme['primary'] : this.$bluefeather.theme['primary'],
+      '--bluefeather-preset-secondary-color': this.$parent.$bluefeather ? this.$parent.$bluefeather.theme['secondary'] : this.$bluefeather.theme['secondary'],
+      '--bluefeather-preset-info-color': this.$parent.$bluefeather ? this.$parent.$bluefeather.theme['info'] : this.$bluefeather.theme['info'],
+      '--bluefeather-preset-success-color': this.$parent.$bluefeather ? this.$parent.$bluefeather.theme['success'] : this.$bluefeather.theme['success'],
+      '--bluefeather-preset-warning-color': this.$parent.$bluefeather ? this.$parent.$bluefeather.theme['warning'] : this.$bluefeather.theme['warning'],
+      '--bluefeather-preset-danger-color': this.$parent.$bluefeather ? this.$parent.$bluefeather.theme['danger'] : this.$bluefeather.theme['danger'],
+      '--bluefeather-preset-dark-color': this.$parent.$bluefeather ? this.$parent.$bluefeather.theme['dark'] : this.$bluefeather.theme['dark'],
+      '--bluefeather-preset-medium-color': this.$parent.$bluefeather ? this.$parent.$bluefeather.theme['medium'] : this.$bluefeather.theme['medium'],
+      '--bluefeather-preset-light-color': this.$parent.$bluefeather ? this.$parent.$bluefeather.theme['light'] : this.$bluefeather.theme['light'],
     };*/
   }
 

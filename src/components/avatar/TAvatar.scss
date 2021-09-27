@@ -52,9 +52,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: $jungletron-white;
+  color: $bluefeather-white;
 
-  background: $jungletron-gray-200;
+  background: $bluefeather-gray-200;
   @include transition270;
 
   @each $size in $t_avatar_sizes {
@@ -65,6 +65,6 @@
 
   &:hover {
     cursor: pointer;
-    background: #{$jungletron-gray-200}60;
+    background: #{$bluefeather-gray-200}60;
   }
 }

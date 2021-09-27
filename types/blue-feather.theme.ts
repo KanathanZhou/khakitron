@@ -1,7 +1,7 @@
 /**
  * Can be more complex, but it is good for now
  */
-export interface JungletronTheme {
+export interface BlueFeatherTheme {
   primary?: string;
   accent?: string;
   tertiary?: string;

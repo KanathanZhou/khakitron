@@ -1,13 +1,13 @@
-import Jungletron from '@/jungletron';
+import BlueFeather from "@/blue-feather";
 
-export default Jungletron;
+export default BlueFeather;
 
-const install = Jungletron.install;
+const install = BlueFeather.install;
 
-Jungletron.install = (Vue, args) => {
-  install.call(Jungletron, Vue, args);
+BlueFeather.install = (Vue, args) => {
+  install.call(BlueFeather, Vue, args);
 };
 
 if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(Jungletron);
+  window.Vue.use(BlueFeather);
 }

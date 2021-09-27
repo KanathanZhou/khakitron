@@ -4,7 +4,7 @@
 module.exports = {
   /*
   * @inheritDoc: https://cli.vuejs.org/zh/guide/build-targets.html#%E5%BA%94%E7%94%A8
-  * @override: Jungletron's entry file is src/jungletron.ts,
+  * @override: bluefeather's entry file is src/bluefeather.ts,
   * so we use 'vue-cli-service build --target lib --name myLib [entry]' to build a single entry as a library using.
   * we can use the following webpack configuration to directly expose the default export.
   * */

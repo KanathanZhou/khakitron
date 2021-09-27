@@ -37,7 +37,7 @@
   box-shadow: inset 0 0 0 1px #DBE0E9;
 
   &[disabled] {
-    background: $jungletron-gray-500;
+    background: $bluefeather-gray-500;
   }
 }
 
@@ -55,10 +55,10 @@
 }
 
 input:checked + .__T_Switch_Slider {
-  background-color: $jungletron-preset-primary-color;
+  background-color: $bluefeather-preset-primary-color;
 
   &[disabled] {
-    background: $jungletron-preset-primary-300-color;
+    background: $bluefeather-preset-primary-300-color;
   }
 }
 

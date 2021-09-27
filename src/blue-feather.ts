@@ -1,19 +1,18 @@
 /* tslint:disable */
-
 import _Vue, {PluginFunction} from 'vue';
 import {install} from '@/install';
 import Theme from './style/_theme.scss';
-import {JungletronTheme} from '../types/jungletron-theme';
+import {BlueFeatherTheme} from "../types/blue-feather.theme";
 
-export default class Jungletron {
+export default class BlueFeather {
   static install: PluginFunction<never> = install;
-  theme: JungletronTheme = {};
+  theme: BlueFeatherTheme = {};
 
-  constructor(userPresetTheme?: JungletronTheme) {
+  constructor(userPresetTheme?: BlueFeatherTheme) {
     this.injectUserPresetTheme(userPresetTheme);
   }
 
-  private injectUserPresetTheme(userPresetTheme?: JungletronTheme): void {
+  private injectUserPresetTheme(userPresetTheme?: BlueFeatherTheme): void {
     if (userPresetTheme) {
       Object.keys(Theme).forEach((item: string) => {
         if ((userPresetTheme as any)[item]) {

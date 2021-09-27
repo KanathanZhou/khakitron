@@ -12,54 +12,54 @@
 
 .__T_Table_header_row {
   @extend %__T_Table_row;
-  box-shadow: inset 0px -1px 0px $jungletron-gray-500;
+  box-shadow: inset 0px -1px 0px $bluefeather-gray-500;
 
   &.__T_Table_header_default {
-    background-color: $jungletron-gray-600;
+    background-color: $bluefeather-gray-600;
   }
 
   &.__T_Table_header_white {
-    background-color: $jungletron-white;
+    background-color: $bluefeather-white;
   }
 
   &:hover {
-    background-color: $jungletron-preset-primary-300-color;
+    background-color: $bluefeather-preset-primary-300-color;
   }
 }
 
 .__T_Table_body_row {
   @extend %__T_Table_row;
-  background-color: $jungletron-white;
+  background-color: $bluefeather-white;
 
   &:not(:last-child) {
-    box-shadow: inset 0px -1px 0px $jungletron-gray-500;
+    box-shadow: inset 0px -1px 0px $bluefeather-gray-500;
 
     & > td:first-child {
-      border-left: 1px solid $jungletron-gray-500;
+      border-left: 1px solid $bluefeather-gray-500;
     }
 
     & > td:last-child {
-      border-right: 1px solid $jungletron-gray-500;
+      border-right: 1px solid $bluefeather-gray-500;
     }
   }
 
   &:hover {
-    background-color: $jungletron-gray-600;
+    background-color: $bluefeather-gray-600;
   }
 
   &:last-child {
     & > td {
-      border-bottom: 1px solid $jungletron-gray-500;
+      border-bottom: 1px solid $bluefeather-gray-500;
     }
 
     & > td:first-child {
       border-bottom-left-radius: 4px;
-      border-left: 1px solid $jungletron-gray-500;
+      border-left: 1px solid $bluefeather-gray-500;
     }
 
     & > td:last-child {
       border-bottom-right-radius: 4px;
-      border-right: 1px solid $jungletron-gray-500;
+      border-right: 1px solid $bluefeather-gray-500;
     }
   }
 }
@@ -74,29 +74,29 @@
 
 .__T_Table_header_col {
   @extend %__T_Table_col;
-  color: $jungletron-gray-200;
-  border-top: 1px solid $jungletron-gray-500;
+  color: $bluefeather-gray-200;
+  border-top: 1px solid $bluefeather-gray-500;
 
   &:first-child {
     border-top-left-radius: 4px;
-    border-left: 1px solid $jungletron-gray-500;
+    border-left: 1px solid $bluefeather-gray-500;
   }
 
   &:last-child {
     border-top-right-radius: 4px;
-    border-right: 1px solid $jungletron-gray-500;
+    border-right: 1px solid $bluefeather-gray-500;
   }
 }
 
 .__T_Table_body_col {
   @extend %__T_Table_col;
-  color: $jungletron-gray-100;
+  color: $bluefeather-gray-100;
 }
 
 .__T_Table_No_Data {
   padding: 12px;
   display: flex;
   justify-content: center;
-  color: $jungletron-gray-400;
+  color: $bluefeather-gray-400;
 }
 

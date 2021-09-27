@@ -10,7 +10,7 @@
   cursor: pointer;
   @include fontSize14px;
   @include fontWeight400;
-  color: $jungletron-gray-100;
+  color: $bluefeather-gray-100;
   line-height: $t-checkbox-line-height;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -27,7 +27,7 @@
   }
 
   &[disabled] {
-    color: $jungletron-gray-400;
+    color: $bluefeather-gray-400;
     pointer-events: none;
   }
 
@@ -54,7 +54,7 @@
       top: 2px;
       width: 6px;
       height: 9px;
-      border: solid $jungletron-white;
+      border: solid $bluefeather-white;
       border-width: 0 2px 2px 0;
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -64,7 +64,7 @@
     &[disabled] {
       &:after {
         left: 4px;
-        border-color: $jungletron-gray-400;
+        border-color: $bluefeather-gray-400;
       }
     }
   }
@@ -81,14 +81,14 @@
       top: 7px;
       width: 8px;
       height: 2px;
-      background: $jungletron-white;
+      background: $bluefeather-white;
     }
 
     &[disabled] {
       &:after {
         left: 3px;
         top: 6px;
-        background: $jungletron-gray-400;
+        background: $bluefeather-gray-400;
       }
     }
   }
@@ -96,25 +96,25 @@
 
 /* On mouse-over, add a grey background color */
 .__T_CheckBox_container:hover input ~ .__T_CheckBox_checkmark {
-  background-color: $jungletron-gray-600;
+  background-color: $bluefeather-gray-600;
 }
 
 /* When the checkbox is checked, add a blue background */
 .__T_CheckBox_container input:checked ~ .__T_CheckBox_checkmark {
-  background-color: $jungletron-preset-primary-color;
+  background-color: $bluefeather-preset-primary-color;
 
   &[disabled] {
-    border: 1px solid $jungletron-gray-400;
-    background-color: $jungletron-gray-600;
+    border: 1px solid $bluefeather-gray-400;
+    background-color: $bluefeather-gray-600;
   }
 }
 
 .__T_CheckBox_container input:not(:checked) ~ .__T_CheckBox_checkmark {
-  border: 1px solid $jungletron-gray-100;
+  border: 1px solid $bluefeather-gray-100;
 
   &[disabled] {
-    border-color: $jungletron-gray-400;
-    background-color: $jungletron-gray-600;
+    border-color: $bluefeather-gray-400;
+    background-color: $bluefeather-gray-600;
   }
 }
 

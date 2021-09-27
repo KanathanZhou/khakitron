@@ -1,16 +1,16 @@
 {
-  "name": "blue_feather",
+  "name": "bluefeather",
   "version": "1.0.0",
-  "description": "A Vue 2.0 UI framework made by KanathanZhou",
+  "description": "A Vue 2.0 UI framework",
   "author": "Kan Zhou",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name jungletron src/index.ts",
+    "build": "vue-cli-service build --target lib --name bluefeather src/index.ts",
     "lint": "vue-cli-service lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "main": "dist/jungletron.common.js",
-  "module": "dist/jungletron.common.js",
+  "main": "dist/bluefeather.common.js",
+  "module": "dist/bluefeather.common.js",
   "types": "types/index.d.ts",
   "files": [
     "src/",
@@ -42,6 +42,6 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "ssh://git@phabricator.graviti.cn:2224/source/FengShui.git"
+    "url": "https://github.com/KanathanZhou/BlueFeather.git"
   }
 }

@@ -2,24 +2,24 @@
 @import "variable";
 
 /**
- * Define all mixins for scss styles using the jungletron-preset-colors.
+ * Define all mixins for scss styles using the bluefeather-preset-colors.
  */
 
 @mixin border_color {
-  [ jungletron-theme="jungletron-theme" ] & {
-    border-color: $jungletron-preset-primary-color;
+  [ bluefeather-theme="bluefeather-theme" ] & {
+    border-color: $bluefeather-preset-primary-color;
   }
 }
 
 @mixin background_color {
-  [ jungletron-theme="jungletron-theme" ] & {
-    background-color: $jungletron-preset-primary-color;
+  [ bluefeather-theme="bluefeather-theme" ] & {
+    background-color: $bluefeather-preset-primary-color;
   }
 }
 
 @mixin color {
-  [ jungletron-theme="jungletron-theme" ] & {
-    color: $jungletron-preset-primary-color;
+  [ bluefeather-theme="bluefeather-theme" ] & {
+    color: $bluefeather-preset-primary-color;
   }
 }
 

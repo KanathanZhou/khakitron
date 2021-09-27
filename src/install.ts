@@ -1,10 +1,10 @@
 /* tslint:disable:no-shadowed-variable */
 import _Vue from 'vue';
-import Jungletron from '../types'; // !! mandatory for this.$jungletron because module augmentation is over there
+import BlueFeather from "../types"; // !! mandatory for this.$bluefeather because module augmentation is over there
 import * as components from './components/index';
 import * as directives from './directives/index';
 
-const ATTRIBUTE_THEME_NAME: string = 'jungletron-theme';
+const ATTRIBUTE_THEME_NAME: string = 'bluefeather-theme';
 
 export function install(Vue: typeof _Vue, options?: any): void {
 
@@ -28,12 +28,12 @@ export function install(Vue: typeof _Vue, options?: any): void {
   Vue.mixin({
     beforeCreate() {
       const options = this.$options as any;
-      if (options.jungletron) {
+      if (options.bluefeather) {
         // setAttribute will make our custom style working, especially those mixins.
         window.document.documentElement.setAttribute(ATTRIBUTE_THEME_NAME, ATTRIBUTE_THEME_NAME);
-        this.$jungletron = Vue.observable(options.jungletron);
+        this.$bluefeather = Vue.observable(options.bluefeather);
       } else {
-        this.$jungletron = (options.parent && options.parent.$jungletron) || this;
+        this.$bluefeather = (options.parent && options.parent.$bluefeather) || this;
       }
     },
   });

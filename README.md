@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Blue Feather is a vue ui framework which make use of the vue technologies and can be used in Vue 2.x versions.
+BlueFeather is a vue ui framework which make use of the vue technologies and can be used in Vue 2.x versions.
 
 
 ## Installation
@@ -12,25 +12,27 @@ Blue Feather is a vue ui framework which make use of the vue technologies and ca
 
 ## Project setup
 
-1. create a file: bluefeather.ts into your plugins folder and put the following code inside there
+1. Create a folder named ```bluefeather``` under ```/src``` directory
+2. Create ```/src/bluefeather/index.ts```
+3. Put the following code inside ```/src/bluefeather/index.ts```:
 
 ```
 import Vue from 'vue';
 
-import Jungletron from 'jungletron';
+import BlueFeather from 'bluefeather';
  
-Vue.use(Jungletron);
+Vue.use(BlueFeather);
  
-export default new Jungletron();
+export default new BlueFeather();
 ```
 
-2. in main.ts/js file, put following code inside:
+4. in ```main.ts/js``` file, put following code inside:
 
 ```
-import jungletron from '@/jungletron';
+import bluefeather from '@/bluefeather';
 
 new Vue({
-  jungletron, <---
+  bluefeather, <---
   render: (h) => h(App),
 }).$mount('#app');
 

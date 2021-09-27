@@ -4,8 +4,7 @@
 <!--    <TextFieldPage></TextFieldPage>-->
 <!--    <Button></Button>-->
 
-    <!--<div>Welcome to Jungletron UI Framework - Vue 2</div>
-
+<!--
     <TDivider margin-top="24" margin-bottom="24"></TDivider>
 
     <div style="display: flex; justify-content: center; align-items: center;">
@@ -18,7 +17,6 @@
             &lt;!&ndash;            <TButton icon-button>
                           <TIcon>close</TIcon>
                         </TButton>&ndash;&gt;
-            <div style="font-weight: bold;">Jungletron</div>
           </div>
           <div style="display: flex; padding: 0 8px;">
             <TAvatar src="https://lh3.googleusercontent.com/ogw/ADGmqu9ORnUDX7F9rlXOP3e0mINZkdxzJGXyeT0XYvj3fg=s32-c-mo"></TAvatar>
@@ -62,7 +60,6 @@
         <template v-slot:trigger="{ on }">
           <TAvatar tile hover :size="50" src="https://lh3.googleusercontent.com/ogw/ADGmqu9ORnUDX7F9rlXOP3e0mINZkdxzJGXyeT0XYvj3fg=s32-c-mo" v-on.native="on"></TAvatar>
         </template>
-        <div>Thanks for using Jungletron</div>
       </TPopover>
     </div>
 
@@ -194,7 +191,7 @@
     <TButton @click="isShowSnackbar = !isShowSnackbar">Show tips</TButton>
 
     <TSnackbar v-model="isShowSnackbar" centered vertical>
-      <TIcon>priority_high</TIcon> Tips!!!! Here is Jungletron!!
+      <TIcon>priority_high</TIcon> Tips!!!!
     </TSnackbar>
 
     <div style="margin-top: 16px; text-align: center;">
