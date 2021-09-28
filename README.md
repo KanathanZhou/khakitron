@@ -51,23 +51,23 @@ new Vue({
 
 | Component      | Progress |
 | ----------- | ----------- |
-| Button      | View Doc       |
-| Breadcrumb      | View Doc       |
-| TextField      | View Doc       |
-| TextArea      | View Doc       |
-| Select      | View Doc       |
-| Menu      | View Doc       |
-| G-Icon      | View Doc       |
-| Link      | View Doc       |
-| Slides      | View Doc       |
-| Checkbox      | View Doc       |
-| Radio Button      | View Doc       |
-| Tabs      | View Doc       |
-| Chip      | View Doc       |
-| Table      | View Doc       |
-| Pagination      | View Doc       |
-| Switch      | View Doc       |
-| Avatar   | View Doc        |
+| Button      | [View Doc](https://kanathanzhou.github.io/khakitron-demo/components/button) |
+| Breadcrumb      | [View Doc](https://kanathanzhou.github.io/khakitron-demo/components/breadcrumb) |
+| TextField      | [View Doc](https://kanathanzhou.github.io/khakitron-demo/components/textfield) |
+| TextArea      | [View Doc](https://kanathanzhou.github.io/khakitron-demo/components/textarea) |
+| Select      | [View Doc](https://kanathanzhou.github.io/khakitron-demo/components/select) |
+| Menu      | [View Doc](https://kanathanzhou.github.io/khakitron-demo/components/menu) |
+| G-Icon      | [View Doc](https://kanathanzhou.github.io/khakitron-demo/components/icon) |
+| Link      | [View Doc](https://kanathanzhou.github.io/khakitron-demo/components/link) |
+| Slides      | [View Doc](https://kanathanzhou.github.io/khakitron-demo/components/slides) |
+| Checkbox      | [View Doc](https://kanathanzhou.github.io/khakitron-demo/components/checkbox) |
+| Radio Button      | [View Doc](https://kanathanzhou.github.io/khakitron-demo/components/radio) |
+| Tabs      | [View Doc](https://kanathanzhou.github.io/khakitron-demo/components/tabs) |
+| Chip      | [View Doc](https://kanathanzhou.github.io/khakitron-demo/components/chip) |
+| Table      | [View Doc](https://kanathanzhou.github.io/khakitron-demo/components/table) |
+| Pagination      | [View Doc](https://kanathanzhou.github.io/khakitron-demo/components/pagination) |
+| Switch      | [View Doc](https://kanathanzhou.github.io/khakitron-demo/components/switch) |
+| Avatar   | [View Doc](https://kanathanzhou.github.io/khakitron-demo/components/avatar) |
 | Tooltip   | In Progress        |
 | Modal   | In Progress        |
 | Card   | In Progress        |
